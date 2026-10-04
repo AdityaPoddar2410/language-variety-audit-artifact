@@ -1,0 +1,74 @@
+[
+  {
+    "name": "llama3.1:8b",
+    "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "size_bytes": 4920753328,
+    "modified_at": "2026-10-04T04:10:08.612217001+05:30",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "llama",
+      "families": [
+        "llama"
+      ],
+      "parameter_size": "8.0B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 131072,
+      "embedding_length": 4096
+    },
+    "parameters": "stop                           \"<|start_header_id|>\"\nstop                           \"<|end_header_id|>\"\nstop                           \"<|eot_id|>\"",
+    "capabilities": [
+      "completion",
+      "tools"
+    ],
+    "template_sha256": "948af2743fc78a328dcb3b0f5a31b3d75f415840fdb699e8b1235978392ecf85"
+  },
+  {
+    "name": "gemma3:12b",
+    "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+    "size_bytes": 8149190253,
+    "modified_at": "2026-10-04T04:22:38.018834959+05:30",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "gemma3",
+      "families": [
+        "gemma3"
+      ],
+      "parameter_size": "12.2B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 131072,
+      "embedding_length": 3840
+    },
+    "parameters": "stop                           \"<end_of_turn>\"\ntemperature                    1\ntop_k                          64\ntop_p                          0.95",
+    "capabilities": [
+      "completion",
+      "vision"
+    ],
+    "template_sha256": "e0a42594d802e5d31cdc786deb4823edb8adff66094d49de8fffe976d753e348"
+  },
+  {
+    "name": "mistral:7b",
+    "digest": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+    "size_bytes": 4372824384,
+    "modified_at": "2026-10-04T04:29:00.934720193+05:30",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "llama",
+      "families": [
+        "llama"
+      ],
+      "parameter_size": "7.2B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 32768,
+      "embedding_length": 4096
+    },
+    "parameters": "stop                           \"[INST]\"\nstop                           \"[/INST]\"",
+    "capabilities": [
+      "completion",
+      "tools"
+    ],
+    "template_sha256": "1ff5b64b61b9a63146475a24f70d3ca2fd6fdeec44247987163479968896fc0b"
+  }
+]

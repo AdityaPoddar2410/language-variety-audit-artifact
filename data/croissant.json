@@ -1,0 +1,286 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "wd": "https://www.wikidata.org/wiki/"
+  },
+  "@type": "sc:Dataset",
+  "name": "beyond_weird_benchmark",
+  "description": "Beyond WEIRD English is a 200-item matched-guise benchmark for evaluating Large Language Model (LLM) comprehension and content-moderation classification across three English varieties: Standard American English (SAE), Standard Indian English (IndEng), and Hinglish (Hindi-English code-mixing). Each item provides three semantically equivalent renditions of the same intent, allowing direct measurement of variety-induced disparities in classification accuracy. The benchmark is fully hand-authored by native Indian-English / Hinglish speakers, contains no scraped or user-generated text, and includes content-moderation labels across six categories (normal, offensive, sexually_suggestive, harassment, violence, self_harm). It is intended as a diagnostic evaluation artifact for measuring the 'Linguistic Gap' (Delta_v) in deployed LLMs.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "data/beyond_weird_benchmark.csv",
+  "version": "1.0.0",
+  "datePublished": "2026-05-06",
+  "keywords": [
+    "evaluation",
+    "benchmark",
+    "content moderation",
+    "Indian English",
+    "Hinglish",
+    "code-mixing",
+    "dialect",
+    "matched-guise",
+    "fairness",
+    "LLM",
+    "linguistic variety",
+    "WEIRD"
+  ],
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Anonymous authors"
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Anonymous authors"
+  },
+  "citeAs": "Anonymous authors. Beyond WEIRD English: A Matched-Guise Benchmark for Evaluating LLM Comprehension Across Standard American English, Indian English, and Hinglish. Version 1.0.0 (2026).", 
+  "isLiveDataset": false,
+
+  "rai:dataCollection": "All 200 items were hand-authored from scratch by native speakers of Standard Indian English and Hinglish (ages 22-25). For each item, an author selected a moderation category and core semantic intent, wrote the SAE variant, then composed the IndEng and Hinglish variants to preserve meaning while reflecting natural variety-specific phrasing. No web-scraping, no user-generated content, and no LLMs were used at any stage of triplet authoring. Two thematic sub-collections were built: 100 'standard_indianisms' items covering coinages, semantic shifts, syntactic features, and pragmatic markers characteristic of Indian English; and 100 'genz_slang' items covering contemporary Hinglish expressions used by Indian Gen-Z speakers.",
+  "rai:dataCollectionType": "Hand-authored by domain experts (no scraping; no user-generated text).",
+  "rai:dataAnnotationProtocol": "Each authored item was assigned a single ground-truth moderation category from {normal, offensive, sexually_suggestive, harassment, violence, self_harm}. All 200 items were then validated via survey by 32 adult Indian English speakers (ages 18-30, recruited from the authors' personal networks in Bangalore, Mumbai, Delhi, and Kolkata) who regularly use Hinglish. Each annotator rated each triplet on a 1-5 Likert scale for (i) naturalness of each variety, (ii) cross-variety semantic equivalence, and (iii) agreement with the assigned moderation label. Items with a mean score below 4.0/5.0 (80% of maximum) were rewritten and re-validated until the threshold was met; approximately 40 items (~20%) required at least one revision and 5-6 required a second round of revision.",
+  "rai:dataAnnotationPlatform": "Web-based opt-in survey form. No paid annotation platform was used. Names and emails were collected only for survey administration and deleted after validation.",
+  "rai:dataAnnotationAnalysis": "Because validation was iterative (items below threshold were rewritten and re-validated until accepted), we report the post-revision acceptance outcome and revision rate (~20% required at least one revision) rather than a static inter-annotator agreement coefficient. Reporting IAA on the post-revision data would be artificially inflated; reporting it on pre-revision data would mischaracterize items that were subsequently improved.",
+  "rai:annotationsPerExample": 32,
+  "rai:annotatorDemographics": "32 adult volunteers, ages 18-30, residing in major Indian metropolitan areas (Bangalore, Mumbai, Delhi, Kolkata). Educational and professional backgrounds spanning undergraduate and graduate education (engineering, commerce, MS/MBA) and professional domains (software, finance). All annotators are fluent IndEng speakers and regular Hinglish users. Annotators were not compensated.",
+  "rai:machineAnnotationTools": "None. No LLMs or automated tools were used in dataset authoring or annotation.",
+  "rai:dataPreprocessingProtocol": "After validation, items were filtered for (i) PII exclusion (no real names, phone numbers, social handles, addresses, or identifying context), (ii) uniqueness (no duplicate triplets), and (iii) consistent moderation-label assignment. No minimum-length threshold was enforced because many moderation-relevant utterances are short in real deployments.",
+  "rai:dataReleaseMaintenancePlan": "The benchmark is released as a versioned CSV file under CC BY 4.0. Updates (e.g., expanded coverage to additional World Englishes, additional categories, or annotator demographic broadening) will be released as new versions with semantic-version bumps. The release is hosted at the URL above; the version field tracks the canonical release. The dataset is static (isLiveDataset=false); we do not stream or continuously update items.",
+  "rai:dataLimitations": [
+    "Linguistic coverage is limited to Standard Indian English and Hindi-English code-mixing; it does not cover other South Asian Englishes (Tamil-English, Telugu-English, Bangla-English, etc.) or other World Englishes (Nigerian, Singaporean, etc.).",
+    "Annotator pool (32 validators, ages 18-30, all from major Indian metros) skews young, urban, and university-educated. Hinglish usage among older, rural, or non-metro speakers may differ in code-switching frequency, lexical choice, and script conventions.",
+    "Category distribution is imbalanced (normal=156, offensive=16, harassment=15, sexually_suggestive=7, self_harm=4, violence=2). Macro-averaged metrics may have high variance for small categories.",
+    "Triplet equivalence is a judgment call: pragmatic connotations, register, and cultural resonance may shift across varieties even when propositional content is held constant.",
+    "Dataset scale (200 items) is modest relative to large-scale NLP benchmarks; the matched-guise design partially compensates by producing 200 x 3 = 600 evaluation points per model per condition, but small-category subgroup analyses should be interpreted cautiously.",
+    "The benchmark is a diagnostic evaluation tool, not a production training corpus. It is not designed for fine-tuning."
+  ],
+  "rai:dataBiases": [
+    "Variety bias: Indian English and Hinglish are operationalized as the urban Gen-Z register most familiar to the authors and validators. Older, rural, or regional registers may be under-represented.",
+    "Category bias: The moderation taxonomy follows common Western/SAE-trained content-moderation systems (normal, offensive, sexually_suggestive, harassment, violence, self_harm). Indigenous Indian moderation taxonomies (e.g., caste-based slurs, communal speech) are not separately surfaced as top-level categories.",
+    "Selection bias in lexical seeds: items were selected to surface variety-induced classification disparities; the benchmark deliberately includes asymmetry probes (e.g., dicky/pant/ragging) and may over-represent items where SAE-IndEng-Hinglish processing diverges relative to a uniform random sample of Indian English usage."
+  ],
+  "rai:dataUseCases": [
+    "Measuring per-variety accuracy of LLM content-moderation classifiers for English-input pipelines.",
+    "Computing the Linguistic Gap metric Delta_v = f(model, SAE) - f(model, v) for v in {Indian English, Hinglish}.",
+    "Stress-testing safety-filter robustness across English varieties (matched-guise probes for over-blocking and under-blocking).",
+    "Benchmarking the effect of inference-time interventions (e.g., chain-of-thought, dialect-aware prompting) on dialect robustness.",
+    "Auditing deployed LLM systems serving Indian English / Hinglish user populations for variety-induced disparities.",
+    "Comparing LLMs across model families on a matched-semantics evaluation, removing content-distribution as a confound."
+  ],
+  "rai:dataUseCasesOutOfScope": [
+    "Training a content-moderation classifier (the benchmark is too small and is intended as evaluation, not training).",
+    "Generalizing claims to non-evaluated English varieties (other South Asian Englishes, African Englishes, etc.) without re-validation.",
+    "Generalizing claims beyond content moderation to arbitrary downstream tasks; the benchmark uses moderation as a diagnostic and may not transfer to generation, dialogue, or long-context tasks without further evidence.",
+    "Operational deployment as a real-time moderation oracle. The dataset is a static evaluation set, not a production rule set."
+  ],
+  "rai:personalSensitiveInformation": "The benchmark contains no personally identifiable information (PII) and no verbatim user-generated text. All examples are hand-authored. No real names, handles, phone numbers, addresses, or identifying context appear in any item. Validator names and email addresses were collected only for survey administration and were deleted after validation; only aggregate statistics are reported.",
+  "rai:dataSocialImpact": "Positive: provides a public, reproducible measurement instrument for an under-measured axis of LLM disparity (linguistic variety within English) affecting hundreds of millions of Indian English / Hinglish users. Encourages disaggregated reporting of LLM evaluation results across English varieties. Negative / dual-use: the benchmark contains items that probe sensitive moderation categories (e.g., harassment, self-harm). The release adopts a responsible-disclosure posture: aggregate reporting is prioritized over verbatim harmful exemplars, and we explicitly avoid publishing exploit-ready prompt templates. Misframing risk: results should not be read as evidence that Indian English or Hinglish are deficient varieties; the documented failures are failures of model training and evaluation, not of speakers.",
+  "rai:dataSensitiveContent": "The benchmark deliberately includes sensitive moderation categories (harassment, violence, self_harm, sexually_suggestive, offensive) so that variety-induced moderation disparities can be measured. Downstream users should treat the dataset as containing sensitive material and provide content warnings to human readers.",
+  "rai:dataReleaseMaintenanceContact": "Contact details are withheld during anonymous review and will be added to the public release.",
+  "rai:hasSyntheticData": false,
+
+  "prov:wasDerivedFrom": [],
+
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "prov:Activity",
+      "name": "Hand authoring",
+      "description": "All 200 triplets were authored from scratch by two native Indian English / Hinglish speakers (ages 22-25). For each item, an author selected a moderation category and core semantic intent, wrote the SAE variant, then composed the IndEng and Hinglish variants. No existing datasets, scraped text, or LLMs were used in authoring."
+    },
+    {
+      "@type": "prov:Activity",
+      "name": "Human validation",
+      "description": "32 adult Indian English speakers (ages 18-30, Bangalore/Mumbai/Delhi/Kolkata) validated all 200 triplets on a 1-5 Likert scale for naturalness, semantic equivalence, and label agreement. Items below 4.0/5.0 were rewritten and re-validated; ~20% required revision."
+    }
+  ],
+
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "benchmark-csv",
+      "name": "beyond_weird_benchmark.csv",
+      "description": "Canonical CSV release of the 200-item matched-guise benchmark. One row per item; columns include the three variety renditions (sae_example, indian_english_translation, hinglish_example), the source word/phrase, the human-authored ground-truth meaning gloss, the moderation category label, and the dataset sub-collection (standard_indianisms or genz_slang).",
+      "contentUrl": "data/beyond_weird_benchmark.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "49a924e33a1d3bcaa36a0be1f9c284678907a68c7a433b6f8f41606b6e0a7c6f"
+    }
+  ],
+
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "items",
+      "name": "items",
+      "description": "One record per benchmark item. Each item provides three semantically-equivalent renditions of the same intent (Hinglish, Indian English, Standard American English), the source word/phrase, the authored meaning gloss, the ground-truth moderation category, and the sub-collection tag.",
+      "key": {
+        "@id": "items/id"
+      },
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "items/id",
+          "name": "id",
+          "description": "Unique integer identifier for the benchmark item (1-200).",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark-csv"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/word_or_phrase",
+          "name": "word_or_phrase",
+          "description": "The seed Indian English word or phrase that the item is built around (e.g., 'passed out', 'dicky', 'prepone').",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark-csv"
+            },
+            "extract": {
+              "column": "word_or_phrase"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/hinglish_example",
+          "name": "hinglish_example",
+          "description": "The Hinglish (Hindi-English code-mixed) rendition of the item's intent.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark-csv"
+            },
+            "extract": {
+              "column": "hinglish_example"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/indian_english_translation",
+          "name": "indian_english_translation",
+          "description": "The Standard Indian English rendition of the item's intent.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark-csv"
+            },
+            "extract": {
+              "column": "indian_english_translation"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/sae_example",
+          "name": "sae_example",
+          "description": "The Standard American English rendition of the item's intent.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark-csv"
+            },
+            "extract": {
+              "column": "sae_example"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/indian_meaning",
+          "name": "indian_meaning",
+          "description": "Human-authored prose gloss of the item's intended meaning, written in Indian English.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark-csv"
+            },
+            "extract": {
+              "column": "indian_meaning"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/category",
+          "name": "category",
+          "description": "Ground-truth moderation category. One of: normal, offensive, sexually_suggestive, harassment, violence, self_harm.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark-csv"
+            },
+            "extract": {
+              "column": "category"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/dataset_type",
+          "name": "dataset_type",
+          "description": "Sub-collection tag. One of: 'standard_indianisms' (100 items covering Indian English coinages, semantic shifts, syntactic / pragmatic features) or 'genz_slang' (100 items covering contemporary Indian Gen-Z Hinglish expressions).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark-csv"
+            },
+            "extract": {
+              "column": "dataset_type"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

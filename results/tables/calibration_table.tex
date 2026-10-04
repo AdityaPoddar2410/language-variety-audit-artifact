@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\caption{Calibration metrics for the grammar-constrained six-class coded classifier. Lower is better for NLL, Brier, ECE, and ACE.}
+\label{tab:calibration-main}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Model & Variety & Accuracy & Confidence & NLL & Brier & ECE & ACE \\
+\midrule
+GPT-4o-mini & SAE & 82.0 & 98.0 & 1.675 & 0.316 & 16.0 & 16.0 \\
+GPT-4o-mini & IndEng & 73.5 & 97.8 & 3.575 & 0.498 & 24.6 & 24.3 \\
+GPT-4o-mini & Hinglish & 71.0 & 96.2 & 3.234 & 0.522 & 25.2 & 25.2 \\
+\addlinespace
+GPT-4.1 Mini & SAE & 80.0 & 96.7 & 1.576 & 0.373 & 17.8 & 16.7 \\
+GPT-4.1 Mini & IndEng & 73.0 & 95.5 & 2.282 & 0.479 & 23.2 & 22.5 \\
+GPT-4.1 Mini & Hinglish & 72.0 & 96.1 & 2.310 & 0.504 & 24.3 & 24.1 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,15 @@
+                                                                Binomial Mixed GLM Results
+==========================================================================================================================================================
+                                                                                                            Type Post. Mean Post. SD   SD  SD (LB) SD (UB)
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                                                      M     3.7156   0.0352                      
+C(variety, Treatment(reference="sae"))[T.hinglish]                                                             M    -1.2056   0.0739                      
+C(variety, Treatment(reference="sae"))[T.indian_english]                                                       M    -0.8782   0.0742                      
+C(condition, Treatment(reference="direct"))[T.cot]                                                             M    -0.0307   0.0704                      
+C(variety, Treatment(reference="sae"))[T.hinglish]:C(condition, Treatment(reference="direct"))[T.cot]          M     0.8316   0.0946                      
+C(variety, Treatment(reference="sae"))[T.indian_english]:C(condition, Treatment(reference="direct"))[T.cot]    M     0.5043   0.0946                      
+item                                                                                                           V     1.3525   0.0498 3.867   3.501   4.272
+system                                                                                                         V    -1.4786   0.2497 0.228   0.138   0.376
+==========================================================================================================================================================
+Parameter types are mean structure (M) and variance structure (V)
+Variance parameters are modeled as log standard deviations

@@ -1,0 +1,246 @@
+{
+  "paper_title": "Paired Estimation of Language-Variety Effects and Calibration Gaps in LLM Classifiers",
+  "dataset": {
+    "items": 200,
+    "varieties": 3,
+    "classes": 6,
+    "sha256": "49a924e33a1d3bcaa36a0be1f9c284678907a68c7a433b6f8f41606b6e0a7c6f"
+  },
+  "models": {
+    "count": 7,
+    "system_count": 9,
+    "historical_count": 4,
+    "fresh_count": 5,
+    "probability_model_count": 2
+  },
+  "accuracy": {
+    "direct_indian_english": {
+      "condition": "direct",
+      "target_variety": "indian_english",
+      "n_items": 200,
+      "n_systems": 9,
+      "gap": 0.065,
+      "gap_pp": 6.5,
+      "ci_lower": 0.0238888888888888,
+      "ci_upper": 0.1077777777777777,
+      "ci_lower_pp": 2.388888888888889,
+      "ci_upper_pp": 10.77777777777778,
+      "cluster_permutation_p": 0.0032799672003279,
+      "cluster_permutation_p_holm": 0.0098399016009839
+    },
+    "direct_hinglish": {
+      "condition": "direct",
+      "target_variety": "hinglish",
+      "n_items": 200,
+      "n_systems": 9,
+      "gap": 0.0911111111111111,
+      "gap_pp": 9.11111111111111,
+      "ci_lower": 0.0516666666666666,
+      "ci_upper": 0.1327777777777777,
+      "ci_lower_pp": 5.166666666666667,
+      "ci_upper_pp": 13.277777777777777,
+      "cluster_permutation_p": 9.99990000099999e-06,
+      "cluster_permutation_p_holm": 3.999960000399996e-05
+    },
+    "reasoning_indian_english": {
+      "condition": "cot",
+      "target_variety": "indian_english",
+      "n_items": 200,
+      "n_systems": 9,
+      "gap": 0.0266666666666666,
+      "gap_pp": 2.666666666666667,
+      "ci_lower": -0.0038888888888888,
+      "ci_upper": 0.0572222222222222,
+      "ci_lower_pp": -0.3888888888888889,
+      "ci_upper_pp": 5.722222222222222,
+      "cluster_permutation_p": 0.0965190348096519,
+      "cluster_permutation_p_holm": 0.1226387736122638
+    },
+    "reasoning_hinglish": {
+      "condition": "cot",
+      "target_variety": "hinglish",
+      "n_items": 200,
+      "n_systems": 9,
+      "gap": 0.0266666666666666,
+      "gap_pp": 2.666666666666667,
+      "ci_lower": -0.0005555555555555,
+      "ci_upper": 0.0538888888888888,
+      "ci_lower_pp": -0.0555555555555555,
+      "ci_upper_pp": 5.388888888888889,
+      "cluster_permutation_p": 0.0613193868061319,
+      "cluster_permutation_p_holm": 0.1226387736122638
+    }
+  },
+  "reasoning_effect": {
+    "hinglish": {
+      "variety": "hinglish",
+      "n_items": 200,
+      "n_systems": 9,
+      "accuracy_direct": 0.7372222222222222,
+      "accuracy_cot": 0.7994444444444444,
+      "reasoning_effect": 0.0622222222222222,
+      "reasoning_effect_pp": 6.222222222222222,
+      "ci_lower": 0.0355555555555555,
+      "ci_upper": 0.09,
+      "ci_lower_pp": 3.5555555555555554,
+      "ci_upper_pp": 9.0,
+      "cluster_permutation_p": 9.99990000099999e-06,
+      "cluster_permutation_p_holm": 2.999970000299997e-05
+    },
+    "sae": {
+      "variety": "sae",
+      "n_items": 200,
+      "n_systems": 9,
+      "accuracy_direct": 0.8283333333333334,
+      "accuracy_cot": 0.8261111111111111,
+      "reasoning_effect": -0.0022222222222222,
+      "reasoning_effect_pp": -0.2222222222222222,
+      "ci_lower": -0.0216666666666666,
+      "ci_upper": 0.0172222222222222,
+      "ci_lower_pp": -2.166666666666667,
+      "ci_upper_pp": 1.7222222222222223,
+      "cluster_permutation_p": 0.8601913980860192,
+      "cluster_permutation_p_holm": 0.8601913980860192
+    }
+  },
+  "calibration_target_minus_sae_ranges": {
+    "correct": {
+      "minimum": -0.11,
+      "maximum": -0.07
+    },
+    "confidence": {
+      "minimum": -0.017276,
+      "maximum": -0.001776
+    },
+    "nll": {
+      "minimum": 0.706428,
+      "maximum": 1.899927
+    },
+    "brier": {
+      "minimum": 0.106081,
+      "maximum": 0.206695
+    },
+    "ece": {
+      "minimum": 0.053581,
+      "maximum": 0.092724
+    },
+    "ace": {
+      "minimum": 0.058091,
+      "maximum": 0.092724
+    }
+  },
+  "ordinary_vs_coded_prompt_agreement": [
+    {
+      "probability_model_id": "gpt-4o-mini-2024-07-18",
+      "ordinary_model_id": "gpt-4o-mini",
+      "variety": "all",
+      "n": 600,
+      "prediction_agreement": 0.8816666666666667,
+      "agreement_ci_lower": 0.85,
+      "agreement_ci_upper": 0.9116666666666666,
+      "cohen_kappa": 0.721317266554147,
+      "ordinary_accuracy": 0.7983333333333333,
+      "probability_prompt_accuracy": 0.755,
+      "accuracy_difference": -0.0433333333333333,
+      "accuracy_difference_ci_lower": -0.0733333333333333,
+      "accuracy_difference_ci_upper": -0.015
+    },
+    {
+      "probability_model_id": "gpt-4.1-mini-2025-04-14",
+      "ordinary_model_id": "gpt-4.1-mini-2025-04-14",
+      "variety": "all",
+      "n": 600,
+      "prediction_agreement": 0.89,
+      "agreement_ci_lower": 0.8566666666666666,
+      "agreement_ci_upper": 0.9216666666666664,
+      "cohen_kappa": 0.7610326287014295,
+      "ordinary_accuracy": 0.79,
+      "probability_prompt_accuracy": 0.75,
+      "accuracy_difference": -0.04,
+      "accuracy_difference_ci_lower": -0.0716666666666666,
+      "accuracy_difference_ci_upper": -0.01
+    }
+  ],
+  "conformal_ranges": {
+    "pooled_marginal": {
+      "sae": {
+        "minimum_mean_coverage": 0.92695,
+        "maximum_mean_coverage": 0.94305,
+        "minimum_mean_set_size": 1.35335,
+        "maximum_mean_set_size": 1.51995
+      },
+      "indian_english": {
+        "minimum_mean_coverage": 0.86965,
+        "maximum_mean_coverage": 0.88935,
+        "minimum_mean_set_size": 1.555,
+        "maximum_mean_set_size": 1.6418
+      },
+      "hinglish": {
+        "minimum_mean_coverage": 0.8845,
+        "maximum_mean_coverage": 0.88655,
+        "minimum_mean_set_size": 1.62145,
+        "maximum_mean_set_size": 1.989
+      }
+    },
+    "variety_conditional": {
+      "sae": {
+        "minimum_mean_coverage": 0.8966,
+        "maximum_mean_coverage": 0.9064,
+        "minimum_mean_set_size": 1.212,
+        "maximum_mean_set_size": 1.2773
+      },
+      "indian_english": {
+        "minimum_mean_coverage": 0.90065,
+        "maximum_mean_coverage": 0.90185,
+        "minimum_mean_set_size": 1.6478,
+        "maximum_mean_set_size": 2.2108
+      },
+      "hinglish": {
+        "minimum_mean_coverage": 0.9029,
+        "maximum_mean_coverage": 0.90395,
+        "minimum_mean_set_size": 1.75035,
+        "maximum_mean_set_size": 2.30345
+      }
+    }
+  },
+  "hierarchical_variety_effects": [
+    {
+      "term": "C(variety, Treatment(reference=\"sae\"))[T.hinglish]",
+      "posterior_mean_log_odds": -1.2055839088296332,
+      "posterior_sd": 0.0738700662401576,
+      "credible_lower": -1.350369238660342,
+      "credible_upper": -1.0607985789989245,
+      "odds_ratio": 0.2995170577885395
+    },
+    {
+      "term": "C(variety, Treatment(reference=\"sae\"))[T.indian_english]",
+      "posterior_mean_log_odds": -0.8782220092468324,
+      "posterior_sd": 0.0741506818282156,
+      "credible_lower": -1.023557345630135,
+      "credible_upper": -0.7328866728635297,
+      "odds_ratio": 0.4155210478683276
+    }
+  ],
+  "mixed_effects_diagnostics": {
+    "n_rows": 10800,
+    "n_items": 200,
+    "n_models": 7,
+    "n_systems": 9,
+    "hierarchical_formula": "correct_int ~ C(variety, Treatment(reference=\"sae\")) * C(condition, Treatment(reference=\"direct\"))",
+    "hierarchical_optimizer_success": true,
+    "hierarchical_optimizer_message": "Optimization terminated successfully.",
+    "hierarchical_iterations": 264,
+    "hierarchical_objective": 2965.3984489134446,
+    "gee_formula": "correct_int ~ C(variety, Treatment(reference=\"sae\")) * C(condition, Treatment(reference=\"direct\")) + C(system_id)",
+    "gee_converged": true
+  },
+  "selected_experiment_cost_usd": 0.422495,
+  "source_hashes": {
+    "results/metrics/paired/aggregate_paired_effects.csv": "26803fbfce34f153434ba8b718396739d23af86c347ac01ebf9ab7f3b1814dfe",
+    "results/metrics/paired/aggregate_reasoning_effects.csv": "659f46325b1d4f44f3a69e0f4852b9dc3a26c961004e98805338f133adf925a2",
+    "results/metrics/calibration/paired_calibration_differences.csv": "0031038e532aaa642211a7f71e6c0ff8babee2abe76371042a538dde762a3b6d",
+    "results/metrics/calibration/prompt_agreement.csv": "ba954069045644525f3a37ee8245b05dadb11f0937d69c1b857f6174254947d3",
+    "results/metrics/conformal/conformal_summary.csv": "e027a09ffc777354c75274e83c09a09eed4b040e7c0679a2d17b3535aedbedbb",
+    "results/metrics/mixed_effects/hierarchical_fixed_effects.csv": "78f6b0c0d9d8d8cc0911447355c0e38fb9ccd5e9afcdaea3b28dce0ae205b18a"
+  }
+}

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "language-variety-audit"
+version = "1.0.0"
+description = "Matched-item evaluation of language-variety effects in LLM classification."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Anonymous authors" }]
+dependencies = [
+    "matplotlib>=3.9",
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "scipy>=1.13",
+    "statsmodels>=0.14",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

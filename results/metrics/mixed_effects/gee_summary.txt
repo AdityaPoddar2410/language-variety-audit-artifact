@@ -1,0 +1,31 @@
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:                 correct_int   No. Observations:                10800
+Model:                                 GEE   No. clusters:                      200
+Method:                        Generalized   Min. cluster size:                  54
+                      Estimating Equations   Max. cluster size:                  54
+Family:                           Binomial   Mean cluster size:                54.0
+Dependence structure:         Exchangeable   Num. iterations:                     5
+Date:                     Sun, 04 Oct 2026   Scale:                           1.000
+Covariance type:                    robust   Time:                         20:28:01
+===============================================================================================================================================================================
+                                                                                                                  coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                                                       1.5807      0.173      9.161      0.000       1.243       1.919
+C(variety, Treatment(reference="sae"))[T.hinglish]                                                             -0.5439      0.128     -4.262      0.000      -0.794      -0.294
+C(variety, Treatment(reference="sae"))[T.indian_english]                                                       -0.4040      0.136     -2.968      0.003      -0.671      -0.137
+C(condition, Treatment(reference="direct"))[T.cot]                                                             -0.0156      0.069     -0.226      0.821      -0.151       0.120
+C(system_id)[T.gemini-2.5-flash-lite::fresh-no-cue]                                                             0.1663      0.081      2.065      0.039       0.008       0.324
+C(system_id)[T.gemma3:12b::fresh-no-cue]                                                                       -0.0652      0.086     -0.761      0.446      -0.233       0.103
+C(system_id)[T.gemma3:12b::historical-no-cue]                                                                   0.0102      0.072      0.142      0.887      -0.131       0.152
+C(system_id)[T.gpt-4.1-mini-2025-04-14::fresh-no-cue]                                                           0.1439      0.099      1.454      0.146      -0.050       0.338
+C(system_id)[T.gpt-4o-mini::historical-no-cue]                                                                  0.0571      0.079      0.727      0.467      -0.097       0.211
+C(system_id)[T.llama3.1:8b::fresh-no-cue]                                                                      -0.0945      0.089     -1.060      0.289      -0.269       0.080
+C(system_id)[T.llama3.1:8b::historical-no-cue]                                                                 -0.1138      0.093     -1.230      0.219      -0.295       0.068
+C(system_id)[T.mistral:7b::fresh-no-cue]                                                                       -0.0896      0.088     -1.013      0.311      -0.263       0.084
+C(variety, Treatment(reference="sae"))[T.hinglish]:C(condition, Treatment(reference="direct"))[T.cot]           0.3679      0.082      4.471      0.000       0.207       0.529
+C(variety, Treatment(reference="sae"))[T.indian_english]:C(condition, Treatment(reference="direct"))[T.cot]     0.2280      0.083      2.735      0.006       0.065       0.391
+==============================================================================
+Skew:                         -1.4245   Kurtosis:                       0.0785
+Centered skew:                -0.4750   Centered kurtosis:              2.5908
+==============================================================================

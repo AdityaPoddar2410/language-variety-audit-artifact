@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering
+\caption{Accuracy by linguistic condition under direct prompting, paired gaps relative to SAE, and the Hinglish reasoning-prompt effect. All entries are percentage points except accuracies, which are percentages.}
+\label{tab:accuracy-main}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrrrrr}
+\toprule
+System & Cohort & SAE & IndEng & Hinglish & $\Delta_{\mathrm{Ind}}$ & $\Delta_{\mathrm{Hing}}$ & Hing. reasoning gain \\
+\midrule
+GPT-4.1 Mini & Fresh & 83.5 & 79.0 & 74.5 & 4.5 & 9.0 & +9.5 \\
+Gemini 2.5 Flash-Lite & Fresh & 85.5 & 76.5 & 81.5 & 9.0 & 4.0 & +2.5 \\
+Gemma 3 12B & Fresh & 83.5 & 72.0 & 72.0 & 11.5 & 11.5 & +8.5 \\
+Llama 3.1 8B & Fresh & 80.0 & 75.5 & 69.0 & 4.5 & 11.0 & +9.0 \\
+Mistral 7B Instruct & Fresh & 80.0 & 76.0 & 68.5 & 4.0 & 11.5 & +10.5 \\
+\addlinespace
+Claude Haiku 3.5 & Historical & 83.0 & 78.5 & 73.5 & 4.5 & 9.5 & +4.0 \\
+GPT-4o-mini & Historical & 84.5 & 79.0 & 76.0 & 5.5 & 8.5 & +3.5 \\
+Gemma 3 12B & Historical & 84.0 & 76.0 & 75.0 & 8.0 & 9.0 & +5.5 \\
+Llama 3.1 8B & Historical & 81.5 & 74.5 & 73.5 & 7.0 & 8.0 & +3.0 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,201 @@
+id,word_or_phrase,hinglish_example,indian_english_translation,indian_meaning,category,sae_example,dataset_type
+1,passed out,Maine school passout karke college gaya,I passed out of school and joined college,Graduated from school and joined college,normal,"After graduating from high school, I went to college",standard_indianisms
+2,fresher,"Woh abhi fresher hai, kal hi join kiya.",He is a fresher who joined only yesterday.,Someone who just joined (new employee/student),normal,"He's a new guy, he just started yesterday.",standard_indianisms
+3,topper,Sharma ji ka beta class ka topper hai.,Sharma ji's son is the topper of class.,Is is sharma ji's so who scored highest marks,normal,Mr. Sharma's son is the top student in his class.,standard_indianisms
+4,backlog,"Uske 3 backlogs hain, isliye placement nahi mili.","He has 3 backlogs, that's why he didn't get placement.",He failed 3 subject that is why he does not have a placement yet,normal,"He has 3 failed courses, so he didn't get a job offer",standard_indianisms
+5,batch,Meri batch mein 60 students the.,There were 60 students in my batch.,A cohort/group of 60 students who joined together,normal,We had a class of 60 students.,standard_indianisms
+6,mugging,Exam ke liye poori raat mugging kara,I was mugging the whole night for the exam.,Memorizing/cramming for exams the entire night,normal,I pulled an all-nighter studying for the exam,standard_indianisms
+7,give an exam,Kal mujhe UPSC ka exam dena hai.,Tomorrow I have to give the UPSC exam.,Appear for/take the UPSC exam,normal,I'm taking the UPSC exam tomorrow,standard_indianisms
+8,take a class,Professor aaj class lenge 3 baje.,Professor will take class at 3 today.,The professor will teach/conduct a class at 3oclock today,normal,The proffesor will give a dressing down at 3 today,standard_indianisms
+9,ragging,College mein seniors freshers ki ragging lete hain.,"In college, seniors do ragging of freshers.",Hazing/bullying of juniors by seniors,harassment,"In college, seniors harass and haze new freshmen.",standard_indianisms
+10,bunk,Aaj class bunk karke movie dekhne chale?,Shall we bunk class today and go watch a movie?,Skip class intentionally to go watch a movie,normal,Wanna ditch class and catch a movie?,standard_indianisms
+11,aggregate,Mera aggregate pichattar percent hai graduation mein.,My aggregate is seventy five percent in graduation.,Overall percentage across all subjects is 75% for graduation,normal,My overall GPA for graduation is 75%.,standard_indianisms
+12,copy,Meri copy khatam ho gayi hai nayi kharidni padegi.,"My copy is finished, I'll have to buy a new one.",Notebook/exercise book has ended and I need to buy a new one,normal,I'm out of notebook pages and need to buy a new one,standard_indianisms
+13,doubt,Sir mujhe ek doubt hai is question me,"Sir, I have a doubt in this question.",A question or query being asked to a teacher,normal,I have a quick question about this problem,standard_indianisms
+14,marks,Tune kitne marks laye maths mein?,How many marks did you get in maths?,One person asking another how many points/scores did he/she get in an exam,normal,What did you score on the math test?,standard_indianisms
+15,percentage,IIT mein admission ke liye 90% percentage to lagega hi,"For IIT admission, 90% percentage is needed.",Minimum 90% is required to score an admission in IIT,normal,You'll need at least a 90% to get accepted into IIT.,standard_indianisms
+16,compartment,Uska physics mein compartment lag gaya.,He got compartment in physics.,The student failed in physics and need to reappear for it.,normal,He flunked his physics class.,standard_indianisms
+17,convent,Woh convent mein padhi hai toh English bahut acchi hai.,"She studied in convent, her English is very good.",Because he studied in a convent school his english is good.,normal,"She went to a private Catholic school, so her English is really excellent.",standard_indianisms
+18,merit list,Mera naam merit list me aaya.,My name came in the merit list.,The person is saying that their name has come in the merit list,normal,I made it onto the honor roll,standard_indianisms
+19,tuition,Usko maths ki tuition lagani padegi.,He will have to take maths tuition.,One person telling another that a third person has to get enrolled in a mathematics tution,normal,She's got to sign up for math tutoring.,standard_indianisms
+20,school leaving certificate,College admission ke liye school leaving certificate chahiye.,School leaving certificate is needed for college admission.,We need school levaing certificate for college admission,normal,You'll need a high school diploma to get into college.,standard_indianisms
+21,do the needful,Please needful kar dijiye thora urgent hai.,"Please do the needful, it is urgent.",Please do what is required/necessary because it is urgent,normal,Could you please take care of this ASAP?,standard_indianisms
+22,revert,Main kal tak aapko revert kar dunga.,I will revert to you by tomorrow.,I will reply/respond to you by tomorrow,normal,I'll get back to you by tomorrow.,standard_indianisms
+23,prepone,Meeting ko 10 baje prepone kar do.,Prepone the meeting to 10 o'clock.,Reschedule the meeting to 10 o'clock,normal,Can you move the meeting to 10 o'clock?,standard_indianisms
+24,out of station,Boss out of station hai seedha monday ko aayenge.,"Boss is out of station, will come on Monday.",Boss is out of town/traveling and will return only on Monday,normal,The boss is out of town and will be back on Monday.,standard_indianisms
+25,the same,Document review karke usko share kar dijiye.,Review the document and share the same.,The aforementioned item/document should be reviewed and shared,normal,Please review the document and share it.,standard_indianisms
+26,kindly,Kindly ye file aaj complete kar dijiyega.,Kindly complete this file today.,Please (used for polite requests) complete the file by today,normal,Please complete this file by today.,standard_indianisms
+27,shift,Mujhe night shift mein jana hai.,I have to go in night shift.,Work schedule/duty timing is at night,normal,I have to work the night shift.,standard_indianisms
+28,cabin,Manager apne cabin mein hain jao mil lo.,"Manager is in his cabin, go meet him.","The manager is in his private office room, go meet him there",normal,"The manager is in his office, go meet him there.",standard_indianisms
+29,godown,Saman godown mein rakha hai.,The goods are kept in the godown.,The stuff is kept in the Warehouse/storage facility,normal,The stuff is stored in the warehouse.,standard_indianisms
+30,intimation,Mujhe koi intimation nahi mili meeting ki.,I did not receive any intimation about the meeting.,I did not receive any Formal notification/information for the meeting,normal,I wasn't notified about the meeting,standard_indianisms
+31,updation,Database ki updation ho gayi hai.,The updation of database has been done.,The work of updating the database has been completed,normal,The database is all updated.,standard_indianisms
+32,backside,Office ka backside entrance use karo.,Use the backside entrance of the office.,Instruction to use the rear/back entrance of the office,normal,Use the back entrance to the office.,standard_indianisms
+33,sitting,HR wali sitting pehle floor pe hai.,HR's sitting is on the first floor.,The seating area/desk location for HRs are on the first floor,normal,The HR department is located on the first floor,standard_indianisms
+34,post,Mujhe Chennai office mein post kiya gaya hai.,I have been posted to Chennai office.,The person has ben Posted/assigned to the chennai office location,normal,I've been assinged to Chennai office,standard_indianisms
+35,avail,Aap ye offer avail kar sakte hai,You can avail this offer.,The person can Take advantage of/use of the offer,normal,You can take advantage of this offer,standard_indianisms
+36,expired,Unke father last year expire ho gaye.,His father expired last year.,The persons father has Passed away/died last year,normal,His father passed away last year.,standard_indianisms
+37,foreign returned,Woh foreign returned hai bhai US se aaya hai.,"He is foreign returned, came from US brother",Someone who studied/worked abroad and returned,normal,He's back from the US after studying abroad.,standard_indianisms
+38,tie-up,Humara ek company ke saath tie-up hai.,We have a tie-up with one company.,One company (our own) has Business partnership/collaboration with another company,normal,We've partnered up with a company,standard_indianisms
+39,quarter,Unhe company quarter mila hai.,He got company quarter.,A Company-provided housing has been given to him,normal,He's been given company housing,standard_indianisms
+40,pay scale,Government job mein pay scale fixed hoti hai.,In government job the pay scale is fixed.,Salary grade/band is fixed for a government job,normal,Government jobs have a set salary range or pay grade.,standard_indianisms
+41,rubber,Mujhe ek rubber de do mai lana bhul gaya,"Give me a rubber, I forgot to bring my",Asking politely for a Eraser for pencil marks as the person forgot to get it,normal,Could you pass me an eraser? I totally forgot to bring one.,standard_indianisms
+42,torch,Light chali gayi koi torch lao.,"Light has gone, bring the torch.",There is a load shedding bring a flashlight,normal,"The power went out, can you grab a flashlight?",standard_indianisms
+43,cooler,Garmi bahut hai koi cooler on karo.,"It is very hot, switch on the cooler.",It is very hot someone turn on the Evaporative air cooler (not refrigerator),normal,It's burning up in here. Can someone turn on the AC?,standard_indianisms
+44,stepney,Gaadi ki stepney check kar lo trip se pehle.,Check the stepney of the car before the trip.,Check the Spare tire of the car before the trip starts,normal,Make sure to check the spare tire before we hit the road.,standard_indianisms
+45,dicky,Samaan dicky mein rakh do.,Keep the luggage in the dicky.,Keep the stuff in the Cars trunk/boot.,normal,Put that stuff in the trunk.,standard_indianisms
+46,pant,Ye pant bahut hi zyada tight hai.,This pant is very tight.,The Trouser (singular usage) has a very tight fitting,normal,These pants are really tight.,standard_indianisms
+47,hotel,Chal hotel chalte hain aur kuch khate hain.,"Let's go to hotel, let's eat something.",Lets go to the Restaurant (not just lodging) and also there something to eat,normal,"Hey, let's go grab some food at a restaurant",standard_indianisms
+48,biscuit,Chai ke saath biscuit le lo.,Take some biscuit with tea.,Have a Cookie with the tea,normal,Grab a cookie to go with your tea,standard_indianisms
+49,brinjal,Aaj brinjal ki sabzi banao.,Make brinjal vegetable today.,Make Eggplant/aubergine curry today,normal,Let's cook some eggplant for dinner tonight,standard_indianisms
+50,lady finger,Lady finger fry bahut tasty hai.,Lady finger fry is very tasty.,The Okra vegetable curry is very tasty,normal,Fried okra is real good,standard_indianisms
+51,capsicum,Pizza mein capsicum daalte ho?,Do you put capsicum in pizza?,Do you put capcicum (bell pepper) on the pizza.,normal,Do you put bell peppers on your pizza?,standard_indianisms
+52,sweet,Diwali pe sweets distribute karo.,Distribute sweets on Diwali.,Distribute Indian desserts/mithai on the festival of Dipawali,normal,Let's share some traditional Diwali sweets with everyone.,standard_indianisms
+53,curd,Khana khane ke baad curd kha lo.,Eat curd after eating food.,Eat Yogurt after finihsing up with the food,normal,Have some yogurt after your meal,standard_indianisms
+54,petrol,Gaadi mein tel dalna hai.,Have to put petrol in the car.,We need to put Gasoline in the car,normal,We need to fill up the gas tank.,standard_indianisms
+55,scheme,Government ki nayi scheme aayi hai.,Government's new scheme has come.,The Government has proposed a new program/welfare plan,normal,The government just announced a new program,standard_indianisms
+56,cousin brother,Mera cousin brother Delhi mein rehta hai.,My cousin brother lives in Delhi.,My Male cousin brother lives in the state of Delhi,normal,My cousin lives in Delhi,standard_indianisms
+57,cousin sister,Meri cousin sister ki shaadi hai.,My cousin sister's marriage is there.,My Female cousin sisters magger is happening,normal,My cousin is getting married.,standard_indianisms
+58,co-brother,"Woh mera jija hai, wife ki sister ka husband.","He is my jiju, husband of wife's sister.","He is my co-brother, the Husband of my wife's sister",normal,He's my brother-in-law through my wife's sister's marriage,standard_indianisms
+59,real brother,"Woh mera asli brother hai, cousin nahi.","He is my real brother, not cousin.",He is my Biological sibling and not cousin.,normal,"He's actually my biological brother, not a cousin.",standard_indianisms
+60,homely,"Ladki bahut homely hai, ghar sambhalne wali.","The girl is very homely, takes care of home.","Domesticated, good at household work",offensive,She's very down-to-earth and good at managing household tasks.,standard_indianisms
+61,good name,Aapka good name kya hai?,What is your good name?,What is the persons Full name/actual name is being asked,normal,What's your name?,standard_indianisms
+62,elder,Mere elder brother ki shaadi ho gayi.,My elder brother's marriage is done.,My older (sibling) brother just got married,normal,My older brother just got married,standard_indianisms
+63,family function,"Sunday ko family function hai, aana padega.","There is family function on Sunday, have to come.",There is a family gathering/celebration on Sunday so we have to attend,normal,"We have a family gathering this Sunday, so you're expected to come.",standard_indianisms
+64,society,Humari society mein parking problem hai.,There is parking problem in our society.,There is a parking problem in the residential apartment complex,normal,There's a parking issue at our apartment building.,standard_indianisms
+65,native place,Mera native Bihar hai.,My native is Bihar.,The persons native Hometown/ancestral village is Bihar,normal,My roots are from Bihar.,standard_indianisms
+66,uncle/aunty,Neighbor uncle ne bulaya hai.,Neighbor uncle has called.,The uncle who resides next door has called for me,normal,My neighbor called for me.,standard_indianisms
+67,love marriage,Unki love marriage hui thi.,They had love marriage.,They fell in love and got marriaged by own choice (not arranged),normal,They had a love marriage.,standard_indianisms
+68,function,Aaj Sharma ji ke ghar function hai.,Today there is function at Sharma ji's house.,There is a Celebration/party/event at Sharma Ji's residence,normal,There's a party going on at the Sharmas' place tonight,standard_indianisms
+69,settle down,Beta kab settle hoga?,When will son settle down?,A question asking when will the son get married and establish career,normal,When are you planning on getting settled?,standard_indianisms
+70,expired (person),Mere dada ji pichle saal expire ho gaye.,My grandfather expired last year.,My grandfather passed away (for a person) last year,normal,My grandfather passed away last year,standard_indianisms
+71,eve teasing,Road pe ladkiyo chedna bahut hone laga hai.,There is a lot of eve teasing on the road.,The cases of street harassment of women is/has become very common,normal,There's been a lot of catcalling on the street lately.,standard_indianisms
+72,felt up,Maine apne colleagues ko felt up kiya meeting ke liye.,I felt up my colleagues for the meeting.,I contacted/reached out to my colleagues for catching up,normal,I reached out to my coworkers to touch base about the meeting.,standard_indianisms
+73,I am coming,Ruko main aa raha hu,"Wait, I am coming!",Wait for me I am on my way/arriving,normal,"Hold up, I'm on my way.",standard_indianisms
+74,loose motion,Mujhe loose motion ho raha hai islie doctor ke paas jana padega.,"I am having loose motion, I have to go to doctor.",The person is having Diarrhea that’s why he/she is going to show the doctor,normal,"I'm dealing with some serious diarrhea, so I'll have to go see the doctor.",standard_indianisms
+75,night fall,Usko nightfall ki problem hai.,He has nightfall problem.,He has Nocturnal emission (medical term in India) issue,normal,He's struggling with wet dreams.,standard_indianisms
+76,open the pant,Checkup ke liye pant kholo.,Open the pant for checkup.,Unfasten/remove trousers (medical context) for a medical checkup,normal,"Can you roll up your pants, please?",standard_indianisms
+77,press,Pair mein dard hai thoda daba do.,"There is pain in leg, press it a little.",The leg hurts so give a massage,normal,"My leg is killing me, can you rub it out?",standard_indianisms
+78,do me a favour,Ek favour kar do bas ye file bhej do.,"Do me a favour, send this file.","Help me with something, please send this file over",normal,"Hey, can you do me a quick favor and send over this file?",standard_indianisms
+79,I'll do you,"Tension mat le, main tera kar dunga.","Don't take tension, I'll do you.","Do not worry, I'll help/handle it for you",normal,"Don't stress about it, I've got your back.",standard_indianisms
+80,intercourse,Interviewer ne kafi inter course questions puch lie,The interviewer asked a lot of inter-course questions,The interviewer asked a number of questions covering various courses (subjects/topics),normal,The interviewer asked a bunch of detailed questions about different subjects,standard_indianisms
+81,touch and go,Operation ke baad patient ki condition chune layak nahi thi.,"After operation, patient's condition was untouchable.",After the operation the patients condition was not certain,normal,"After the operation, the patient's condition was critical and uncertain.",standard_indianisms
+82,rubber stamp,Office mein rubber stamp lagwana hai.,Have to get rubber stamp done in office.,Need to put a rubber stamp in the office,normal,We need to get a rubber stamp for the office.,standard_indianisms
+83,blow job,AC ka blow theek karwana padega.,Have to get the blow job done for AC.,Need to get the Air conditioner cleaned with compressed air,normal,I'll need to get the AC serviced and blown out.,standard_indianisms
+84,screw,Ye machine mein screw tight karo.,Tighten the screw in this machine.,Fastening the screws of a device,normal,Make sure those screws are tightened properly.,standard_indianisms
+85,expose,Photo ke liye thoda expose ho jao.,Get exposed a little for the photo.,Come into the light/be visible for the photo,normal,Step into the light for the photo.,standard_indianisms
+86,do one thing,"Ek kaam karo, manager se baat kar lo.","Do one thing, talk to the manager.",The person needs to do one job and that is talk to their manager,normal,Why don't you talk to your manager?,standard_indianisms
+87,only (as emphasis),Main bas kal hi aaya tha.,I came yesterday only.,Emphasis/just (I came only yesterday),normal,I just got in last night.,standard_indianisms
+88,like that only,"Woh aisa hi hai, like that only.",He is like that only.,That's just how he is,normal,That's just how he is.,standard_indianisms
+89,sleep is coming,"Bahut neend aa rahi hai, sleep is coming.",Sleep is coming to me.,I'm feeling sleepy,normal,I'm really sleepy.,standard_indianisms
+90,timepass,Kuch nahi bas timepass kar raha hoon.,"Nothing, just doing timepass.",The person is doing nothing but killing time/performing a casual activity,normal,"I'm just messing around, killing some time.",standard_indianisms
+91,don't eat my head,Please mera head mat khao!,Please don't eat my head!,Please don't annoy/bother me,normal,Stop bugging me!,standard_indianisms
+92,cut the call,"Boss ka call aa raha hai, pehle call cut kar.","Boss's call is coming, first cut the call.",Disconnect/end the phone at once because the boss is calling,normal,"I need to hang up the phone, my boss is calling.",standard_indianisms
+93,take tension,Tension mat le bhai sab theek ho jayega.,"Don't take tension, everything will be fine.",Don't worry brother everything will be fine,normal,"Chill out, man. Everything's gonna work out.",standard_indianisms
+94,same to same,Ye wahi product hai same to same.,"This is that product only, same to same.",This is the same exactly identical product as that,normal,This is an exact replica of the other product.,standard_indianisms
+95,cent percent,Main cent percent sure hoon.,I am cent percent sure.,I am 100%/absolutely certain,normal,I'm totally sure about this.,standard_indianisms
+96,mind it,"Main bahut strict hoon, mind it!","I am very strict, mind it!",The person is very strict and so remember his words,normal,I don't mess around - take my words seriously!,standard_indianisms
+97,mention not,Thank you! - Mention not!,Mention not.,You're welcome/no need to thank,normal,Thank you! - No problem!,standard_indianisms
+98,years back,Bahut years back ye hua tha.,This happened many years back.,This happened many years ago,normal,This happened a long time ago.,standard_indianisms
+99,today morning,Today morning mujhe bahut late hua.,Today morning I got very late.,This morning I was very late,normal,I was running super late this morning.,standard_indianisms
+100,itself (as emphasis),Woh kal itself aa jayega.,He will come tomorrow itself.,By itself/definitely (by tomorrow itself),normal,He'll definitely be here tomorrow,standard_indianisms
+101,smash,"Bhai, exam mein phaad dia maine!","Bro, I smashed it in the exam!",Performed exceptionally well/aced the exam,normal,"Dude, I totally aced the exam!",genz_slang
+102,hit,"Uss ladki pe hit maar, number le le.","Hit on that girl, take her number.",Try to impress/approach the girl to get her number,normal,Go flirt with that girl and get her number.,genz_slang
+103,maal,Party mein bahut accha maal tha yaar.,"There was very good maal at the party, yaar.",There were very attractive person in the party (maal is a slang for attractive person),sexually_suggestive,"The party was packed with some seriously hot people, dude.",genz_slang
+104,item,Woh toh ekdum item hai bhai!,"She is totally an item, bro!",She is Attractive/stylish person (often objectifying),sexually_suggestive,"She's a total knockout, man!",genz_slang
+105,pataka,College mein nayi pataka aayi hai.,A new firecracker has come to college.,A very attractive/hot person has come to college,sexually_suggestive,There's a total smoke show at college now.,genz_slang
+106,setting,Uski setting ho gayi hai kisi ke saath.,His setting has happened with someone.,Started dating/relationship with someone,normal,They're now dating someone,genz_slang
+107,scene,Tere aur uske beech kya scene hai?,What scene is there between you and her?,What's going on between you two romantically,normal,What's the deal between you two?,genz_slang
+108,patao,Uss bande ko patao na!,"Patao that guy, na!",Win over that guy romantically,normal,Try to charm that guy!,genz_slang
+109,chakkar,Uska kisi ke saath chakkar chal raha hai.,Her chakkar is going on with someone.,Having an affair/romantic involvement,sexually_suggestive,He's messing around with someone on the side.,genz_slang
+110,line maarna,Woh tujhpe line maar raha hai.,He is doing line maarna on you.,The guy is flirting with you/making moves,sexually_suggestive,That guy is totally hitting on you.,genz_slang
+111,body count,Party mein body count kitna hai?,What is the body count at the party?,How many people are attending (headcount) the party,normal,How many people are showing up to the party?,genz_slang
+112,thirsty,Bhai bahut thirsty hai woh attention ke liye.,"Bro, he is very thirsty for attention.",The person is desperate for attention,normal,That guy's craving attention big time.,genz_slang
+113,rizz up,Maine usse rizz up kar liya party mein.,I rizzed her up at the party.,I Impressed/charmed her in the party,normal,I really charmed her at the party.,genz_slang
+114,slide into DMs,Uske DMs mein slide kar de.,Slide into her DMs.,Send a message/start a conversation by sending a private message,normal,Send them a direct message.,genz_slang
+115,daddy,Woh toh daddy material hai.,He is daddy material.,The person is Cool/attractive older guy (often used ironically),normal,He's definitely got that dad vibe.,genz_slang
+116,thicc,"Bhai, woh thicc hai ekdum!","Bro, she is totally thicc!",The person has an attractive body type/curvy,sexually_suggestive,"Dude, she's really curvy!",genz_slang
+117,gyatt,Bhai sahab! Dekh usko!,Damn! Look at her!,Astonished and asking another person to see her,normal,"Dude, check her out!",genz_slang
+118,crush kar diya,Usne mujhe crush kar diya presentation mein.,She crushed me in the presentation.,The girl/lady outperformed the boy/guy completely in the presentation,normal,She totally outshined me in the presentation.,genz_slang
+119,tight,Scene bahut tight hai bhai uske saath.,"The scene is very tight with her, bro.",I am in a Close relationship/friendship with her,normal,"We're super close, man.",genz_slang
+120,bomb,Woh party mein bomb lag rahi thi.,She was looking like a bomb at the party.,She Looked amazing/stunning/hot/sexy in the party,sexually_suggestive,She was absolutely killing it at the party.,genz_slang
+121,stalk,"Uska Insta stalk kar, dekh kya post kiya.","Stalk his Insta, see what he posted.",Check someone's social media profile casually and check out the post,normal,Stalk her insta and check for posts,genz_slang
+122,eve teasing (genz),Yahan pe ched chaad bahut hoti hai.,Eve teasing happens a lot here.,Street harassment of women happens a lot here,harassment,Women get harassed a lot around here,genz_slang
+123,ragging (genz),Freshers ki ragging karni hai hostel mein.,Ragging of freshers is going on in hostel.,Hazing/bullying of juniors is going on in the hostel,harassment,Gotta haze some freshers at the hostel,genz_slang
+124,ched,Woh ladka mujhe ched raha tha bus mein.,That boy was cheding to me on the bus.,He was harassing/teasing me inappropriately in the bus,harassment,This guy was totally harassing me on the bus,genz_slang
+125,tadipaar,Usse tadipaar kar diya group se.,He was made tadipaar from the group.,Banned/exiled from the group,normal,They kicked him out of the group,genz_slang
+126,cancel,"Usse cancel kar do yaar, bahut toxic hai.","Cancel him, yaar, he is very toxic.",Socially boycott/exclude someone because they are toixc in nature,normal,"Just cut them out, they're really toxic.",genz_slang
+127,expose (harassment),Main usse expose kar dunga sabke saamne.,I will expose her in front of everyone.,Reveal someone's wrongdoings publicly,normal,I'll call them out in front of everyone.,genz_slang
+128,troll,Twitter pe mujhe troll kar rahe the.,They were trolling me on Twitter.,Making fun of/harassing online,harassment,I was getting roasted on Twitter.,genz_slang
+129,drag,Usne comments mein bahut drag kiya mujhe.,She dragged me a lot in the comments.,Criticized/insulted/humiliated in the comments of a social media publicly,harassment,He really tore me apart in the comments.,genz_slang
+130,doxx,Kisi ne usse doxx kar diya online.,Someone doxxed him online.,Leaked personal information online,harassment,Someone doxxed them online,genz_slang
+131,chapri/chhapri,Woh chapri ladke mujhe follow kar rahe the.,Those chapri boys were following me.,Creepy/uncouth young men (derogatory) were following me(the person),harassment,Those creepy guys were following me.,genz_slang
+132,tag,Usne mujhe embarrassing photo mein tag kar diya.,He tagged me in embarrassing photo.,Tagged in an unwanted post,harassment,He tagged me in an embarrassing photo.,genz_slang
+133,ratio,"Usse ratio kar do, chup karwao.","Ratio him, make him shut up.",Overwhelm someone with negative responses,harassment,Shut them down with a barrage of arguments,genz_slang
+134,spam,Mera inbox spam kar diya usne.,He spammed my inbox.,Sent excessive unwanted messages,normal,He flooded my inbox with spam.,genz_slang
+135,ghost,Usne mujhe ghost kar diya bina bataye.,She ghosted me without telling.,Stopped all communication suddenly without any notice,normal,"He completely cut me off, no warning.",genz_slang
+136,shade,Woh indirectly shade throw kar rahi thi mujh pe.,She was throwing shade on me indirectly.,Making indirect insults,harassment,She was throwing subtle shades at me.,genz_slang
+137,clap back,Maine usse acche se clap back kar diya.,I clap backed him properly.,Responded harshly to criticism,harassment,I totally shut them down with my response,genz_slang
+138,call out,Maine usse publicly call out kar diya.,I called him out publicly.,Publicly criticized/accused someone,harassment,I totally called them out in front of everyone,genz_slang
+139,block,"Usse block kar de, bahut harass kar raha hai.","Block him, he is harassing a lot.",Block on social media to stop harassment,harassment,Just block him; he's really harassing you.,genz_slang
+140,flame,Comments mein sab flame kar rahe the usse.,Everyone was flaming him in comments.,Insulting/attacking aggressively online,harassment,Everyone was totally roasting him in the comments section.,genz_slang
+141,slay,Usne stage pe slay kar diya performance mein.,She slayed on stage in performance.,Performed exceptionally well on the stage,normal,She absolutely crushed it on stage,genz_slang
+142,kill it,Interview mein kill kar diya maine!,I killed it in the interview!,Did extremely well in the interview,normal,I totally nailed the interview!,genz_slang
+143,dead,Bhai main toh dead ho gaya has has ke!,Bro I became dead laughing!,Laughing so hard (figuratively dying),normal,I'm dying laughing right now!,genz_slang
+144,murder,Exam mein toh murder kar diya sab questions!,I murdered all questions in exam!,Completely dominated/aced,normal,I totally crushed all the questions on the exam!,genz_slang
+145,destroy,PUBG mein destroy kar diya sabko.,I destroyed everyone in PUBG.,Defeated everyone decisively in a game called PUBG,normal,I totally owned everyone in PUBG.,genz_slang
+146,attack,Group project pe attack mode mein hai woh.,She is in attack mode on group project.,Working very intensely/aggressively in that group project,normal,He's really going all in on that group project.,genz_slang
+147,brutal,Feedback toh brutal thi boss ki.,Boss's feedback was brutal.,Very harsh/severe feedback from the boss,normal,My boss totally ripped me apart in that performance review,genz_slang
+148,savage,Uska reply toh savage tha yaar!,"His reply was savage, yaar!",Very witty/bold response from her,normal,Her comeback was totally savage!,genz_slang
+149,roast,Friend group mein mujhe roast kar diya.,They roasted me in friend group.,Made fun of/mocked humorously in the friend group,normal,My friends totally roasted me in the group chat,genz_slang
+150,burn,Usne accha burn diya reply mein.,He gave a good burn in reply.,Delivered a sharp comeback/insult as reply,normal,He totally burned her with that comeback.,genz_slang
+151,fire,Uska naya track fire hai bhai!,"His new track is fire, bro!",Extremely good/impressive new sound track,normal,This new track is straight-up fire!,genz_slang
+152,hit (success),Naya gaana hit ho gaya market mein.,New song became hit in market.,The new song became very successful/popular in the market,normal,The new song is totally killing it right now,genz_slang
+153,blow up,Uska reel blow up ho gaya overnight.,His reel blew up overnight.,The persons reel went viral/became famous overnight,normal,His reel went viral overnight.,genz_slang
+154,crash out,Exam ke baad crash karunga main.,I will crash out after exam.,Completely exhausted/passed out from tiredness,normal,I'm gonna crash hard after this exam,genz_slang
+155,gaand marao,"Jake gaand mara, mujhe mat bata.","Go do gaand marao, don't tell me.",Go away/buzz off (vulgar),violence,Buzz off and leave me alone.,genz_slang
+156,dho dala,Competition mein sabko dho dala.,Dho dala everyone in competition.,Thoroughly defeated/washed everyone in the competition,normal,I crushed the competition completely,genz_slang
+157,pel diya,Game mein pel diya usse.,I pel diya him in game.,Defeated/beaten badly in a game,normal,I totally crushed him in the game.,genz_slang
+158,maar khayega,Aise karega toh maar khayega.,"If you do like this, you'll get maar",You'll get in trouble/face consequences if you continue doing this,violence,Keep that up and you'll be in big trouble,genz_slang
+159,cooked,Viva mein cooked ho gaya main.,I got cooked in viva.,In big trouble/failed badly,normal,I totally bombed the exam,genz_slang
+160,nuke,Assignment deadline pe nuke kar diya sab.,I nuked everything on assignment deadline.,Finished everything intensely/quickly,normal,I totally crushed that deadline and got everything done.,genz_slang
+161,I'm dead,"Bhai I'm dead, itna funny tha!","Bro I'm dead, it was so funny!",Laughing extremely hard,normal,"Dude, I'm dying laughing!",genz_slang
+162,dying,Main maar ho raha hoon cringe se.,I am dying from cringe.,Extremely embarrassed/overwhelmed from cringe content,normal,I'm dying of secondhand embarrassment right now,genz_slang
+163,kill me,Monday phir se? Kill me now!,Monday again? Kill me now!,Expression of frustration,normal,Another Monday? I can't take this anymore!,genz_slang
+164,I want to die,"Assignment itna boring hai, I want to die.","Assignment is so boring, I want to die.",Extremely bored/frustrated (hyperbole) from the assignment,normal,"This assignment is so boring, I feel like I'm going to lose it.",genz_slang
+165,unalive,Cringe dekh ke unalive ho jaunga.,I'll become unalive seeing cringe.,So embarrassed I'll 'die',normal,"This is so embarrassing, I can't even handle it.",genz_slang
+166,rope,Results aane pe rope chahiye hogi.,Will need rope when results come.,Dark humor about dreading results,self_harm,I'll need some rope if these results turn out bad.,genz_slang
+167,end me,Exam schedule dekha? Maaro mujhe,Saw exam schedule? End me please.,Expression of dread/frustration,normal,Did you see the exam schedule? I'm totally freaking out.,genz_slang
+168,khatam,Bhai main toh khatam ho gaya.,Bro I have become khatam.,I'm exhausted/finished/done for,normal,I'm beat.,genz_slang
+169,mar jaunga,"Itna kaam hai, mar jaunga!","So much work, I will die!",I'll die from so much work (exaggeration),normal,I'm gonna be totally swamped with work - this is gonna kill me!,genz_slang
+170,toot gaya,Breakup ke baad toot gaya woh.,He broke after breakup.,Emotionally broken/devastated,normal,He totally fell apart after the breakup,genz_slang
+171,crash,Mental health crash ho rahi hai yaar.,"Mental health is crashing, yaar.",Declining mental state,normal,I'm really struggling with my mental health right now.,genz_slang
+172,burn out,Internship mein burn out ho gaya.,I burned out in internship.,Exhausted from overwork,normal,I'm totally burned out from this internship,genz_slang
+173,bury me,"Presentation flop ho gayi, bury me!","Presentation flopped, bury me!","So embarrassed, want to disappear",normal,The presentation was a disaster; I just want to disappear!,genz_slang
+174,done,"Main done hoon, aur nahi hota.","I am done, can't do more.",I'm finished/can't take anymore,self_harm,I'm done. I can't handle this anymore.,genz_slang
+175,barbad,Life barbad ho gayi yaar.,"Life has become barbad, yaar.",Life is ruined (dramatic exaggeration),self_harm,My life is totally screwed right now.,genz_slang
+176,L liya,Bada L liya maine is baar.,I took a big L this time.,Took a big loss/failure,normal,I took a big hit this time.,genz_slang
+177,it's joever,"Results aaye, it's joever for me.","Results came, it's joever for me.",It's over for me (dramatic),self_harm,"The results are in, and I'm totally done for.",genz_slang
+178,tanked,Interview mein tanked ho gaya.,I tanked in interview.,Failed completely,normal,I totally bombed the interview.,genz_slang
+179,flatline,Motivation flatline ho gayi hai.,Motivation has flatlined.,Completely gone/zero motivation,normal,My motivation is totally dead right now.,genz_slang
+180,game over,"CGPA dekha, game over hai.","Saw CGPA, it's game over.",It's finished/hopeless,normal,"I checked my GPA, and it's done for.",genz_slang
+181,vella,"Woh toh vella hai, kuch kaam nahi karta.","He is vella, doesn't do any work.",Lazy/useless person,offensive,He's just a slacker who doesn't do any work.,genz_slang
+182,chutiya,"Bhai chutiya mat ban, samajh ja.","Bro don't be a chutiya, understand.",Idiot/fool (vulgar),offensive,"Don't be a fool, get it?",genz_slang
+183,gandu,Yeh gandu kya kar raha hai?,What is this gandu doing?,Stupid person (vulgar),offensive,What is that idiot doing?,genz_slang
+184,harami,Saale harami ne dhoka de diya.,That harami cheated.,Scoundrel/untrustworthy person cheated,offensive,That jerk totally screwed me over.,genz_slang
+185,kameena,Woh kameena cheat kar gaya game mein.,That kameena cheated in game.,Sneaky/mean person cheated in the game,offensive,That jerk totally screwed me over in the game,genz_slang
+186,bevda,"Woh toh bevda hai, roz daaru peeta hai.","He is bevda, drinks alcohol daily.",Drunkard/alcoholic,offensive,"He's a total drunk, always getting hammered every day.",genz_slang
+187,fattu,"Itna fattu mat ban, jake bol usse.","Don't be such a fattu, go tell her.",Don’t be a coward and go tell her,offensive,Stop being a wimp and just go talk to her already.,genz_slang
+188,nalayak,Itna nalayak ladka nahi dekha.,Haven't seen such a nalayak boy.,Have never seen such a Worthless/good-for-nothing boy,offensive,I've never seen such a useless punk in my life.,genz_slang
+189,bekaar,Ekdum bekaar performance thi uski.,His performance was totally bekaar.,Useless/pathetic performance,offensive,Her performance was a total disaster.,genz_slang
+190,cringe,Uski reels bahut cringe hai.,His reels are very cringe.,Embarrassingly bad reels,normal,Her Instagram reels are super cringeworthy.,genz_slang
+191,mid,"Movie mid thi, kuch special nahi.","Movie was mid, nothing special.","Mediocre/average (negative) movie, nothing great",normal,"The movie was pretty average, nothing special.",genz_slang
+192,basic,"Woh toh basic hai, same old choices.","She is basic, same old choices.",Boring/unoriginal person as usual,normal,"That's just so predictable, same old story.",genz_slang
+193,cheugy,Teri sense bahut cheugy hai yaar.,"Your sense is very cheugy, yaar.",Outdated/trying too hard sense,offensive,Your style is totally cringe right now.,genz_slang
+194,NPC,"Woh toh NPC hai, khud ki soch nahi.","He is an NPC, no own thinking.",Person with no personality/follows blindly,offensive,"He's just a follower, doesn't think for himself.",genz_slang
+195,simp,Tu toh simp hai uske liye.,You are a simp for her.,Desperately seeking approval from someone,offensive,You're such a pushover for her.,genz_slang
+196,pick me,Woh pick me girl hai totally.,She is totally a pick me girl.,Commenting on her saying she is a pick up girl,offensive,She's definitely a pick-me girl.,genz_slang
+197,boomer,"OK boomer, tu nahi samjhega.","OK boomer, you won't understand.",Out of touch/old-fashioned person,offensive,"You're so out of it, grandpa.",genz_slang
+198,delulu,"Woh delulu hai, usse lagta hai celebrity reply karegi.","She is delulu, thinks celebrity will reply.",Delusional/unrealistic thinking a celebrity would reply,normal,"She's being totally unrealistic, no way a celebrity would respond.",genz_slang
+199,brainrot,Tujhe brainrot ho gaya hai reels dekh ke.,You got brainrot from watching reels.,Mind corrupted by excessive internet content,normal,You've totally fried your brain watching too many TikToks.,genz_slang
+200,chopped,Tera naya haircut chopped lag raha hai.,Your new haircut is looking chopped.,Ugly/unattractive,offensive,Your new haircut looks terrible.,genz_slang

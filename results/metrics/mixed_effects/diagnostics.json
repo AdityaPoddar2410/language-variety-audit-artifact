@@ -1,0 +1,13 @@
+{
+  "n_rows": 10800,
+  "n_items": 200,
+  "n_models": 7,
+  "n_systems": 9,
+  "hierarchical_formula": "correct_int ~ C(variety, Treatment(reference=\"sae\")) * C(condition, Treatment(reference=\"direct\"))",
+  "hierarchical_optimizer_success": true,
+  "hierarchical_optimizer_message": "Optimization terminated successfully.",
+  "hierarchical_iterations": 264,
+  "hierarchical_objective": 2965.3984489134446,
+  "gee_formula": "correct_int ~ C(variety, Treatment(reference=\"sae\")) * C(condition, Treatment(reference=\"direct\")) + C(system_id)",
+  "gee_converged": true
+}

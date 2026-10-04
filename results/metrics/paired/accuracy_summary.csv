@@ -1,0 +1,55 @@
+cohort,provider,model,model_id,system_id,prompt_cue,condition,variety,n,valid_n,n_correct,accuracy
+fresh,Google Vertex AI,Gemini 2.5 Flash-Lite,gemini-2.5-flash-lite,gemini-2.5-flash-lite::fresh-no-cue,none,cot,hinglish,200,200,168,0.84
+fresh,Google Vertex AI,Gemini 2.5 Flash-Lite,gemini-2.5-flash-lite,gemini-2.5-flash-lite::fresh-no-cue,none,cot,indian_english,200,200,161,0.805
+fresh,Google Vertex AI,Gemini 2.5 Flash-Lite,gemini-2.5-flash-lite,gemini-2.5-flash-lite::fresh-no-cue,none,cot,sae,200,200,166,0.83
+fresh,Google Vertex AI,Gemini 2.5 Flash-Lite,gemini-2.5-flash-lite,gemini-2.5-flash-lite::fresh-no-cue,none,direct,hinglish,200,200,163,0.815
+fresh,Google Vertex AI,Gemini 2.5 Flash-Lite,gemini-2.5-flash-lite,gemini-2.5-flash-lite::fresh-no-cue,none,direct,indian_english,200,200,153,0.765
+fresh,Google Vertex AI,Gemini 2.5 Flash-Lite,gemini-2.5-flash-lite,gemini-2.5-flash-lite::fresh-no-cue,none,direct,sae,200,200,171,0.855
+fresh,Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::fresh-no-cue,none,cot,hinglish,200,200,161,0.805
+fresh,Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::fresh-no-cue,none,cot,indian_english,200,200,159,0.795
+fresh,Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::fresh-no-cue,none,cot,sae,200,200,163,0.815
+fresh,Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::fresh-no-cue,none,direct,hinglish,200,200,144,0.72
+fresh,Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::fresh-no-cue,none,direct,indian_english,200,200,144,0.72
+fresh,Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::fresh-no-cue,none,direct,sae,200,200,167,0.835
+fresh,Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::fresh-no-cue,none,cot,hinglish,200,200,156,0.78
+fresh,Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::fresh-no-cue,none,cot,indian_english,200,200,164,0.82
+fresh,Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::fresh-no-cue,none,cot,sae,200,200,163,0.815
+fresh,Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::fresh-no-cue,none,direct,hinglish,200,200,138,0.69
+fresh,Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::fresh-no-cue,none,direct,indian_english,200,200,151,0.755
+fresh,Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::fresh-no-cue,none,direct,sae,200,200,160,0.8
+fresh,Ollama,Mistral 7B Instruct,mistral:7b,mistral:7b::fresh-no-cue,none,cot,hinglish,200,200,158,0.79
+fresh,Ollama,Mistral 7B Instruct,mistral:7b,mistral:7b::fresh-no-cue,none,cot,indian_english,200,200,160,0.8
+fresh,Ollama,Mistral 7B Instruct,mistral:7b,mistral:7b::fresh-no-cue,none,cot,sae,200,200,166,0.83
+fresh,Ollama,Mistral 7B Instruct,mistral:7b,mistral:7b::fresh-no-cue,none,direct,hinglish,200,200,137,0.685
+fresh,Ollama,Mistral 7B Instruct,mistral:7b,mistral:7b::fresh-no-cue,none,direct,indian_english,200,200,152,0.76
+fresh,Ollama,Mistral 7B Instruct,mistral:7b,mistral:7b::fresh-no-cue,none,direct,sae,200,200,160,0.8
+fresh,OpenAI,GPT-4.1 Mini,gpt-4.1-mini-2025-04-14,gpt-4.1-mini-2025-04-14::fresh-no-cue,none,cot,hinglish,200,200,168,0.84
+fresh,OpenAI,GPT-4.1 Mini,gpt-4.1-mini-2025-04-14,gpt-4.1-mini-2025-04-14::fresh-no-cue,none,cot,indian_english,200,200,164,0.82
+fresh,OpenAI,GPT-4.1 Mini,gpt-4.1-mini-2025-04-14,gpt-4.1-mini-2025-04-14::fresh-no-cue,none,cot,sae,200,200,172,0.86
+fresh,OpenAI,GPT-4.1 Mini,gpt-4.1-mini-2025-04-14,gpt-4.1-mini-2025-04-14::fresh-no-cue,none,direct,hinglish,200,200,149,0.745
+fresh,OpenAI,GPT-4.1 Mini,gpt-4.1-mini-2025-04-14,gpt-4.1-mini-2025-04-14::fresh-no-cue,none,direct,indian_english,200,200,158,0.79
+fresh,OpenAI,GPT-4.1 Mini,gpt-4.1-mini-2025-04-14,gpt-4.1-mini-2025-04-14::fresh-no-cue,none,direct,sae,200,200,167,0.835
+historical,Anthropic,Claude Haiku 3.5,claude-3-5-haiku-20241022,claude-3-5-haiku-20241022::historical-no-cue,none,cot,hinglish,200,200,155,0.775
+historical,Anthropic,Claude Haiku 3.5,claude-3-5-haiku-20241022,claude-3-5-haiku-20241022::historical-no-cue,none,cot,indian_english,200,200,160,0.8
+historical,Anthropic,Claude Haiku 3.5,claude-3-5-haiku-20241022,claude-3-5-haiku-20241022::historical-no-cue,none,cot,sae,200,200,166,0.83
+historical,Anthropic,Claude Haiku 3.5,claude-3-5-haiku-20241022,claude-3-5-haiku-20241022::historical-no-cue,none,direct,hinglish,200,200,147,0.735
+historical,Anthropic,Claude Haiku 3.5,claude-3-5-haiku-20241022,claude-3-5-haiku-20241022::historical-no-cue,none,direct,indian_english,200,200,157,0.785
+historical,Anthropic,Claude Haiku 3.5,claude-3-5-haiku-20241022,claude-3-5-haiku-20241022::historical-no-cue,none,direct,sae,200,200,166,0.83
+historical,Google/Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::historical-no-cue,none,cot,hinglish,200,200,161,0.805
+historical,Google/Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::historical-no-cue,none,cot,indian_english,200,200,157,0.785
+historical,Google/Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::historical-no-cue,none,cot,sae,200,200,165,0.825
+historical,Google/Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::historical-no-cue,none,direct,hinglish,200,200,150,0.75
+historical,Google/Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::historical-no-cue,none,direct,indian_english,200,200,152,0.76
+historical,Google/Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::historical-no-cue,none,direct,sae,200,200,168,0.84
+historical,Meta/Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::historical-no-cue,none,cot,hinglish,200,200,153,0.765
+historical,Meta/Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::historical-no-cue,none,cot,indian_english,200,200,155,0.775
+historical,Meta/Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::historical-no-cue,none,cot,sae,200,200,161,0.805
+historical,Meta/Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::historical-no-cue,none,direct,hinglish,200,200,147,0.735
+historical,Meta/Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::historical-no-cue,none,direct,indian_english,200,200,149,0.745
+historical,Meta/Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::historical-no-cue,none,direct,sae,200,200,163,0.815
+historical,OpenAI,GPT-4o-mini,gpt-4o-mini,gpt-4o-mini::historical-no-cue,none,cot,hinglish,200,200,159,0.795
+historical,OpenAI,GPT-4o-mini,gpt-4o-mini,gpt-4o-mini::historical-no-cue,none,cot,indian_english,200,200,159,0.795
+historical,OpenAI,GPT-4o-mini,gpt-4o-mini,gpt-4o-mini::historical-no-cue,none,cot,sae,200,200,165,0.825
+historical,OpenAI,GPT-4o-mini,gpt-4o-mini,gpt-4o-mini::historical-no-cue,none,direct,hinglish,200,200,152,0.76
+historical,OpenAI,GPT-4o-mini,gpt-4o-mini,gpt-4o-mini::historical-no-cue,none,direct,indian_english,200,200,158,0.79
+historical,OpenAI,GPT-4o-mini,gpt-4o-mini,gpt-4o-mini::historical-no-cue,none,direct,sae,200,200,169,0.845

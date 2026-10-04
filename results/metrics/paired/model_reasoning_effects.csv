@@ -1,0 +1,28 @@
+cohort,provider,model,model_id,system_id,prompt_cue,variety,n_paired,accuracy_direct,accuracy_cot,reasoning_effect,reasoning_effect_pp,ci_lower,ci_upper,ci_lower_pp,ci_upper_pp,permutation_p,permutation_p_holm
+fresh,Google Vertex AI,Gemini 2.5 Flash-Lite,gemini-2.5-flash-lite,gemini-2.5-flash-lite::fresh-no-cue,none,hinglish,200,0.815,0.84,0.025,2.5,-0.015,0.065,-1.5,6.5,0.3311566884331157,1.0
+fresh,Google Vertex AI,Gemini 2.5 Flash-Lite,gemini-2.5-flash-lite,gemini-2.5-flash-lite::fresh-no-cue,none,indian_english,200,0.765,0.805,0.04,4.0,-0.005,0.085,-0.5,8.5,0.13460865391346086,1.0
+fresh,Google Vertex AI,Gemini 2.5 Flash-Lite,gemini-2.5-flash-lite,gemini-2.5-flash-lite::fresh-no-cue,none,sae,200,0.855,0.83,-0.025,-2.5,-0.07,0.015,-7.000000000000001,1.5,0.3615663843361566,1.0
+fresh,Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::fresh-no-cue,none,hinglish,200,0.72,0.805,0.085,8.5,0.03,0.14,3.0,14.000000000000002,0.004689953100468995,0.11724882751172488
+fresh,Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::fresh-no-cue,none,indian_english,200,0.72,0.795,0.075,7.5,0.02,0.13,2.0,13.0,0.013579864201357986,0.2987570124298757
+fresh,Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::fresh-no-cue,none,sae,200,0.835,0.815,-0.02,-2.0,-0.065,0.025,-6.5,2.5,0.5238547614523855,1.0
+fresh,Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::fresh-no-cue,none,hinglish,200,0.69,0.78,0.09,9.0,0.025,0.155,2.5,15.5,0.009629903700962991,0.2311176888231118
+fresh,Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::fresh-no-cue,none,indian_english,200,0.755,0.82,0.065,6.5,0.01,0.12,1.0,12.0,0.03609963900360996,0.7580924190758092
+fresh,Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::fresh-no-cue,none,sae,200,0.8,0.815,0.015,1.5,-0.015,0.05,-1.5,5.0,0.5491145088549114,1.0
+fresh,Ollama,Mistral 7B Instruct,mistral:7b,mistral:7b::fresh-no-cue,none,hinglish,200,0.685,0.79,0.105,10.5,0.05,0.165,5.0,16.5,0.0006999930000699993,0.018899811001889984
+fresh,Ollama,Mistral 7B Instruct,mistral:7b,mistral:7b::fresh-no-cue,none,indian_english,200,0.76,0.8,0.04,4.0,-0.01,0.09,-1.0,9.0,0.18450815491845082,1.0
+fresh,Ollama,Mistral 7B Instruct,mistral:7b,mistral:7b::fresh-no-cue,none,sae,200,0.8,0.83,0.03,3.0,-0.01,0.07,-1.0,7.000000000000001,0.2085379146208538,1.0
+fresh,OpenAI,GPT-4.1 Mini,gpt-4.1-mini-2025-04-14,gpt-4.1-mini-2025-04-14::fresh-no-cue,none,hinglish,200,0.745,0.84,0.095,9.5,0.04,0.15,4.0,15.0,0.001959980400195998,0.050959490405095946
+fresh,OpenAI,GPT-4.1 Mini,gpt-4.1-mini-2025-04-14,gpt-4.1-mini-2025-04-14::fresh-no-cue,none,indian_english,200,0.79,0.82,0.03,3.0,-0.02,0.085,-2.0,8.5,0.3442265577344227,1.0
+fresh,OpenAI,GPT-4.1 Mini,gpt-4.1-mini-2025-04-14,gpt-4.1-mini-2025-04-14::fresh-no-cue,none,sae,200,0.835,0.86,0.025,2.5,-0.02,0.07,-2.0,7.000000000000001,0.4045559544404556,1.0
+historical,Anthropic,Claude Haiku 3.5,claude-3-5-haiku-20241022,claude-3-5-haiku-20241022::historical-no-cue,none,hinglish,200,0.735,0.775,0.04,4.0,-0.01,0.09,-1.0,9.0,0.16749832501674983,1.0
+historical,Anthropic,Claude Haiku 3.5,claude-3-5-haiku-20241022,claude-3-5-haiku-20241022::historical-no-cue,none,indian_english,200,0.785,0.8,0.015,1.5,-0.025,0.055,-2.5,5.5,0.6053739462605374,1.0
+historical,Anthropic,Claude Haiku 3.5,claude-3-5-haiku-20241022,claude-3-5-haiku-20241022::historical-no-cue,none,sae,200,0.83,0.83,0.0,0.0,-0.025,0.025,-2.5,2.5,1.0,1.0
+historical,Google/Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::historical-no-cue,none,hinglish,200,0.75,0.805,0.055,5.5,0.015,0.095,1.5,9.5,0.012789872101278988,0.2941670583294167
+historical,Google/Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::historical-no-cue,none,indian_english,200,0.76,0.785,0.025,2.5,-0.025,0.075,-2.5,7.5,0.4252657473425266,1.0
+historical,Google/Ollama,Gemma 3 12B,gemma3:12b,gemma3:12b::historical-no-cue,none,sae,200,0.84,0.825,-0.015,-1.5,-0.05,0.015,-5.0,1.5,0.5494645053549464,1.0
+historical,Meta/Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::historical-no-cue,none,hinglish,200,0.735,0.765,0.03,3.0,-0.02,0.08,-2.0,8.0,0.3262667373326267,1.0
+historical,Meta/Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::historical-no-cue,none,indian_english,200,0.745,0.775,0.03,3.0,-0.015,0.075,-1.5,7.5,0.28439715602843973,1.0
+historical,Meta/Ollama,Llama 3.1 8B,llama3.1:8b,llama3.1:8b::historical-no-cue,none,sae,200,0.815,0.805,-0.01,-1.0,-0.04,0.015,-4.0,1.5,0.7246427535724643,1.0
+historical,OpenAI,GPT-4o-mini,gpt-4o-mini,gpt-4o-mini::historical-no-cue,none,hinglish,200,0.76,0.795,0.035,3.5000000000000004,-0.005,0.08,-0.5,8.0,0.16495835041649584,1.0
+historical,OpenAI,GPT-4o-mini,gpt-4o-mini,gpt-4o-mini::historical-no-cue,none,indian_english,200,0.79,0.795,0.005,0.5,-0.05,0.06,-5.0,6.0,1.0,1.0
+historical,OpenAI,GPT-4o-mini,gpt-4o-mini,gpt-4o-mini::historical-no-cue,none,sae,200,0.845,0.825,-0.02,-2.0,-0.055,0.015,-5.5,1.5,0.42552574474255256,1.0
