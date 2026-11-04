@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fit hierarchical and fixed-model robustness analyses for study."""
+"""Fit hierarchical and fixed-model robustness analyses."""
 from __future__ import annotations
 
 import argparse
@@ -25,12 +25,12 @@ def main() -> None:
     parser.add_argument(
         "--accuracy",
         type=Path,
-        default=Path("results/validated/accuracy_long.csv"),
+        default=Path("results/study/validated/accuracy_long.csv"),
     )
     parser.add_argument(
         "--out-dir",
         type=Path,
-        default=Path("results/metrics/mixed_effects"),
+        default=Path("results/study/metrics/mixed_effects"),
     )
     parser.add_argument("--seed", type=int, default=2027)
     args = parser.parse_args()

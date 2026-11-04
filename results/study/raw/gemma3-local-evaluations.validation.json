@@ -1,0 +1,19 @@
+{
+  "path": "results/study/raw/gemma3-local-evaluations.jsonl",
+  "sha256": "843371dbcd4f692559329f75113f2735411da28821e3b215dbe3e30f41469b0b",
+  "rows": 1200,
+  "unique_keys": 1200,
+  "model": "gemma3:12b",
+  "run_ids": [
+    "gemma3-local-v1"
+  ],
+  "benchmark_sha256": [
+    "49a924e33a1d3bcaa36a0be1f9c284678907a68c7a433b6f8f41606b6e0a7c6f"
+  ],
+  "prompt_versions": [
+    "v1-no-variety-cue"
+  ],
+  "total_input_tokens": 276898,
+  "total_output_tokens": 131707,
+  "total_latency_seconds": 9577.83227341206
+}

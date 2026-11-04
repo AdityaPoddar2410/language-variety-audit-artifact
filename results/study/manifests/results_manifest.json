@@ -1,0 +1,706 @@
+{
+  "paper_title": "Matched Meaning, Unequal Moderation: Auditing Linguistic Bias in LLMs",
+  "dataset": {
+    "items": 200,
+    "varieties": 3,
+    "classes": 6,
+    "sha256": "49a924e33a1d3bcaa36a0be1f9c284678907a68c7a433b6f8f41606b6e0a7c6f"
+  },
+  "models": {
+    "count": 7,
+    "system_count": 9,
+    "original_count": 4,
+    "fresh_count": 5,
+    "probability_model_count": 2
+  },
+  "accuracy": {
+    "direct_indian_english": {
+      "condition": "direct",
+      "target_variety": "indian_english",
+      "n_items": 200,
+      "n_systems": 9,
+      "gap": 0.065,
+      "gap_pp": 6.5,
+      "ci_lower": 0.0238888888888888,
+      "ci_upper": 0.1077777777777777,
+      "ci_lower_pp": 2.388888888888889,
+      "ci_upper_pp": 10.77777777777778,
+      "cluster_permutation_p": 0.0032799672003279,
+      "cluster_permutation_p_holm": 0.0098399016009839
+    },
+    "direct_hinglish": {
+      "condition": "direct",
+      "target_variety": "hinglish",
+      "n_items": 200,
+      "n_systems": 9,
+      "gap": 0.0911111111111111,
+      "gap_pp": 9.11111111111111,
+      "ci_lower": 0.0516666666666666,
+      "ci_upper": 0.1327777777777777,
+      "ci_lower_pp": 5.166666666666667,
+      "ci_upper_pp": 13.277777777777777,
+      "cluster_permutation_p": 9.99990000099999e-06,
+      "cluster_permutation_p_holm": 3.999960000399996e-05
+    },
+    "reasoning_indian_english": {
+      "condition": "cot",
+      "target_variety": "indian_english",
+      "n_items": 200,
+      "n_systems": 9,
+      "gap": 0.0266666666666666,
+      "gap_pp": 2.666666666666667,
+      "ci_lower": -0.0038888888888888,
+      "ci_upper": 0.0572222222222222,
+      "ci_lower_pp": -0.3888888888888889,
+      "ci_upper_pp": 5.722222222222222,
+      "cluster_permutation_p": 0.0965190348096519,
+      "cluster_permutation_p_holm": 0.1226387736122638
+    },
+    "reasoning_hinglish": {
+      "condition": "cot",
+      "target_variety": "hinglish",
+      "n_items": 200,
+      "n_systems": 9,
+      "gap": 0.0266666666666666,
+      "gap_pp": 2.666666666666667,
+      "ci_lower": -0.0005555555555555,
+      "ci_upper": 0.0538888888888888,
+      "ci_lower_pp": -0.0555555555555555,
+      "ci_upper_pp": 5.388888888888889,
+      "cluster_permutation_p": 0.0613193868061319,
+      "cluster_permutation_p_holm": 0.1226387736122638
+    }
+  },
+  "reasoning_effect": {
+    "hinglish": {
+      "variety": "hinglish",
+      "n_items": 200,
+      "n_systems": 9,
+      "accuracy_direct": 0.7372222222222222,
+      "accuracy_cot": 0.7994444444444444,
+      "reasoning_effect": 0.0622222222222222,
+      "reasoning_effect_pp": 6.222222222222222,
+      "ci_lower": 0.0355555555555555,
+      "ci_upper": 0.09,
+      "ci_lower_pp": 3.5555555555555554,
+      "ci_upper_pp": 9.0,
+      "cluster_permutation_p": 9.99990000099999e-06,
+      "cluster_permutation_p_holm": 2.999970000299997e-05
+    },
+    "sae": {
+      "variety": "sae",
+      "n_items": 200,
+      "n_systems": 9,
+      "accuracy_direct": 0.8283333333333334,
+      "accuracy_cot": 0.8261111111111111,
+      "reasoning_effect": -0.0022222222222222,
+      "reasoning_effect_pp": -0.2222222222222222,
+      "ci_lower": -0.0216666666666666,
+      "ci_upper": 0.0172222222222222,
+      "ci_lower_pp": -2.166666666666667,
+      "ci_upper_pp": 1.7222222222222223,
+      "cluster_permutation_p": 0.8601913980860192,
+      "cluster_permutation_p_holm": 0.8601913980860192
+    }
+  },
+  "fairness": {
+    "direct_indian_english_overflag": {
+      "condition": "direct",
+      "metric": "overflag",
+      "target_variety": "indian_english",
+      "n_items": 156,
+      "n_systems": 9,
+      "sae_rate": 0.0498575498575498,
+      "target_rate": 0.1517094017094017,
+      "difference": 0.1018518518518518,
+      "difference_pp": 10.185185185185183,
+      "ci_lower": 0.0591168091168091,
+      "ci_upper": 0.1474358974358974,
+      "ci_lower_pp": 5.911680911680912,
+      "ci_upper_pp": 14.743589743589745,
+      "cluster_permutation_p": 9.99990000099999e-06,
+      "cluster_permutation_p_holm": 0.0001199988000119
+    },
+    "direct_hinglish_overflag": {
+      "condition": "direct",
+      "metric": "overflag",
+      "target_variety": "hinglish",
+      "n_items": 156,
+      "n_systems": 9,
+      "sae_rate": 0.0498575498575498,
+      "target_rate": 0.1666666666666666,
+      "difference": 0.1168091168091168,
+      "difference_pp": 11.68091168091168,
+      "ci_lower": 0.0769230769230769,
+      "ci_upper": 0.1602564102564102,
+      "ci_lower_pp": 7.6923076923076925,
+      "ci_upper_pp": 16.025641025641026,
+      "cluster_permutation_p": 9.99990000099999e-06,
+      "cluster_permutation_p_holm": 0.0001199988000119
+    },
+    "reasoning_indian_english_overflag": {
+      "variety": "indian_english",
+      "metric": "overflag",
+      "n_items": 156,
+      "n_systems": 9,
+      "direct_rate": 0.1517094017094017,
+      "reasoning_rate": 0.0797720797720797,
+      "difference": -0.0719373219373219,
+      "difference_pp": -7.193732193732194,
+      "ci_lower": -0.1004273504273504,
+      "ci_upper": -0.0448717948717948,
+      "ci_lower_pp": -10.042735042735044,
+      "ci_upper_pp": -4.487179487179487,
+      "cluster_permutation_p": 9.99990000099999e-06,
+      "cluster_permutation_p_holm": 8.999910000899992e-05
+    },
+    "reasoning_hinglish_overflag": {
+      "variety": "hinglish",
+      "metric": "overflag",
+      "n_items": 156,
+      "n_systems": 9,
+      "direct_rate": 0.1666666666666666,
+      "reasoning_rate": 0.0683760683760683,
+      "difference": -0.0982905982905982,
+      "difference_pp": -9.82905982905983,
+      "ci_lower": -0.1289173789173789,
+      "ci_upper": -0.0705128205128205,
+      "ci_lower_pp": -12.891737891737892,
+      "ci_upper_pp": -7.051282051282051,
+      "cluster_permutation_p": 9.99990000099999e-06,
+      "cluster_permutation_p_holm": 8.999910000899992e-05
+    },
+    "reasoning_indian_english_harm_miss": {
+      "variety": "indian_english",
+      "metric": "harm_miss",
+      "n_items": 44,
+      "n_systems": 9,
+      "direct_rate": 0.4318181818181818,
+      "reasoning_rate": 0.5429292929292929,
+      "difference": 0.1111111111111111,
+      "difference_pp": 11.11111111111111,
+      "ci_lower": 0.0429292929292929,
+      "ci_upper": 0.1843434343434343,
+      "ci_lower_pp": 4.292929292929292,
+      "ci_upper_pp": 18.434343434343432,
+      "cluster_permutation_p": 0.0033799662003379,
+      "cluster_permutation_p_holm": 0.0101398986010139
+    },
+    "reasoning_hinglish_harm_miss": {
+      "variety": "hinglish",
+      "metric": "harm_miss",
+      "n_items": 44,
+      "n_systems": 9,
+      "direct_rate": 0.457070707070707,
+      "reasoning_rate": 0.6060606060606061,
+      "difference": 0.1489898989898989,
+      "difference_pp": 14.898989898989898,
+      "ci_lower": 0.0959595959595959,
+      "ci_upper": 0.202020202020202,
+      "ci_lower_pp": 9.595959595959595,
+      "ci_upper_pp": 20.2020202020202,
+      "cluster_permutation_p": 9.99990000099999e-06,
+      "cluster_permutation_p_holm": 8.999910000899992e-05
+    }
+  },
+  "fairness_robustness": {
+    "direct_indian_english": {
+      "overflag": {
+        "condition": "direct",
+        "metric": "overflag",
+        "target_variety": "indian_english",
+        "n_items": 156,
+        "n_systems": 9,
+        "sae_rate": 0.0498575498575498,
+        "target_rate": 0.1517094017094017,
+        "difference": 0.1018518518518518,
+        "difference_pp": 10.185185185185183,
+        "ci_lower": 0.0591168091168091,
+        "ci_upper": 0.1474358974358974,
+        "ci_lower_pp": 5.911680911680912,
+        "ci_upper_pp": 14.743589743589745,
+        "cluster_permutation_p": 9.99990000099999e-06,
+        "cluster_permutation_p_holm": 0.0001199988000119
+      },
+      "relative_risk": {
+        "condition": "direct",
+        "target_variety": "indian_english",
+        "n_items": 156,
+        "n_systems": 9,
+        "n_item_system_pairs": 1404,
+        "sae_rate": 0.0498575498575498,
+        "target_rate": 0.1517094017094017,
+        "rate_ratio": 3.0428571428571427,
+        "rate_ratio_ci_lower": 1.955347088159588,
+        "rate_ratio_ci_upper": 5.533333333333333,
+        "target_only_flagged": 169,
+        "sae_only_flagged": 26,
+        "discordance_ratio": 6.5,
+        "discordance_ratio_ci_lower": 3.2082720588235296,
+        "discordance_ratio_ci_upper": 17.09113636363636
+      },
+      "item_families": {
+        "standard_indianisms": {
+          "item_family": "standard_indianisms",
+          "n_stratum_items": 100,
+          "condition": "direct",
+          "metric": "overflag",
+          "target_variety": "indian_english",
+          "n_items": 98,
+          "n_systems": 9,
+          "sae_rate": 0.0238095238095238,
+          "target_rate": 0.0793650793650793,
+          "difference": 0.0555555555555555,
+          "difference_pp": 5.555555555555555,
+          "ci_lower": 0.0124716553287981,
+          "ci_upper": 0.1054421768707483,
+          "ci_lower_pp": 1.2471655328798186,
+          "ci_upper_pp": 10.54421768707483,
+          "cluster_permutation_p": 0.0175298247017529,
+          "cluster_permutation_p_holm": 0.0219197808021919
+        },
+        "genz_slang": {
+          "item_family": "genz_slang",
+          "n_stratum_items": 100,
+          "condition": "direct",
+          "metric": "overflag",
+          "target_variety": "indian_english",
+          "n_items": 58,
+          "n_systems": 9,
+          "sae_rate": 0.0938697318007662,
+          "target_rate": 0.2739463601532567,
+          "difference": 0.1800766283524904,
+          "difference_pp": 18.007662835249043,
+          "ci_lower": 0.0977011494252873,
+          "ci_upper": 0.2662835249042146,
+          "ci_lower_pp": 9.770114942528735,
+          "ci_upper_pp": 26.62835249042146,
+          "cluster_permutation_p": 5.999940000599994e-05,
+          "cluster_permutation_p_holm": 0.0001799982000179
+        }
+      }
+    },
+    "direct_hinglish": {
+      "overflag": {
+        "condition": "direct",
+        "metric": "overflag",
+        "target_variety": "hinglish",
+        "n_items": 156,
+        "n_systems": 9,
+        "sae_rate": 0.0498575498575498,
+        "target_rate": 0.1666666666666666,
+        "difference": 0.1168091168091168,
+        "difference_pp": 11.68091168091168,
+        "ci_lower": 0.0769230769230769,
+        "ci_upper": 0.1602564102564102,
+        "ci_lower_pp": 7.6923076923076925,
+        "ci_upper_pp": 16.025641025641026,
+        "cluster_permutation_p": 9.99990000099999e-06,
+        "cluster_permutation_p_holm": 0.0001199988000119
+      },
+      "relative_risk": {
+        "condition": "direct",
+        "target_variety": "hinglish",
+        "n_items": 156,
+        "n_systems": 9,
+        "n_item_system_pairs": 1404,
+        "sae_rate": 0.0498575498575498,
+        "target_rate": 0.1666666666666666,
+        "rate_ratio": 3.3428571428571425,
+        "rate_ratio_ci_lower": 2.1544559099437146,
+        "rate_ratio_ci_upper": 6.0,
+        "target_only_flagged": 187,
+        "sae_only_flagged": 23,
+        "discordance_ratio": 8.130434782608695,
+        "discordance_ratio_ci_lower": 3.817929292929293,
+        "discordance_ratio_ci_upper": 30.142857142857142
+      },
+      "item_families": {
+        "standard_indianisms": {
+          "item_family": "standard_indianisms",
+          "n_stratum_items": 100,
+          "condition": "direct",
+          "metric": "overflag",
+          "target_variety": "hinglish",
+          "n_items": 98,
+          "n_systems": 9,
+          "sae_rate": 0.0238095238095238,
+          "target_rate": 0.0793650793650793,
+          "difference": 0.0555555555555555,
+          "difference_pp": 5.555555555555555,
+          "ci_lower": 0.0226757369614512,
+          "ci_upper": 0.0952380952380952,
+          "ci_lower_pp": 2.2675736961451247,
+          "ci_upper_pp": 9.523809523809524,
+          "cluster_permutation_p": 0.0007499925000749,
+          "cluster_permutation_p_holm": 0.0029999700002999
+        },
+        "genz_slang": {
+          "item_family": "genz_slang",
+          "n_stratum_items": 100,
+          "condition": "direct",
+          "metric": "overflag",
+          "target_variety": "hinglish",
+          "n_items": 58,
+          "n_systems": 9,
+          "sae_rate": 0.0938697318007662,
+          "target_rate": 0.3141762452107279,
+          "difference": 0.2203065134099616,
+          "difference_pp": 22.03065134099617,
+          "ci_lower": 0.1302681992337164,
+          "ci_upper": 0.3084291187739463,
+          "ci_lower_pp": 13.026819923371647,
+          "ci_upper_pp": 30.84291187739463,
+          "cluster_permutation_p": 1.999980000199998e-05,
+          "cluster_permutation_p_holm": 7.999920000799993e-05
+        }
+      }
+    },
+    "cot_indian_english": {
+      "overflag": {
+        "condition": "cot",
+        "metric": "overflag",
+        "target_variety": "indian_english",
+        "n_items": 156,
+        "n_systems": 9,
+        "sae_rate": 0.022079772079772,
+        "target_rate": 0.0797720797720797,
+        "difference": 0.0576923076923076,
+        "difference_pp": 5.769230769230769,
+        "ci_lower": 0.0306267806267806,
+        "ci_upper": 0.0868945868945869,
+        "ci_lower_pp": 3.0626780626780628,
+        "ci_upper_pp": 8.68945868945869,
+        "cluster_permutation_p": 9.99990000099999e-06,
+        "cluster_permutation_p_holm": 0.0001199988000119
+      },
+      "relative_risk": {
+        "condition": "cot",
+        "target_variety": "indian_english",
+        "n_items": 156,
+        "n_systems": 9,
+        "n_item_system_pairs": 1404,
+        "sae_rate": 0.022079772079772,
+        "target_rate": 0.0797720797720797,
+        "rate_ratio": 3.612903225806451,
+        "rate_ratio_ci_lower": 2.0188591893780576,
+        "rate_ratio_ci_upper": 10.444444444444445,
+        "target_only_flagged": 94,
+        "sae_only_flagged": 13,
+        "discordance_ratio": 7.230769230769231,
+        "discordance_ratio_ci_lower": 3.0,
+        "discordance_ratio_ci_upper": 35.40416666666655
+      },
+      "item_families": {
+        "standard_indianisms": {
+          "item_family": "standard_indianisms",
+          "n_stratum_items": 100,
+          "condition": "cot",
+          "metric": "overflag",
+          "target_variety": "indian_english",
+          "n_items": 98,
+          "n_systems": 9,
+          "sae_rate": 0.0136054421768707,
+          "target_rate": 0.0555555555555555,
+          "difference": 0.0419501133786848,
+          "difference_pp": 4.195011337868481,
+          "ci_lower": 0.0136054421768707,
+          "ci_upper": 0.0759637188208616,
+          "ci_lower_pp": 1.3605442176870748,
+          "ci_upper_pp": 7.596371882086168,
+          "cluster_permutation_p": 0.0056399436005639,
+          "cluster_permutation_p_holm": 0.0169198308016919
+        },
+        "genz_slang": {
+          "item_family": "genz_slang",
+          "n_stratum_items": 100,
+          "condition": "cot",
+          "metric": "overflag",
+          "target_variety": "indian_english",
+          "n_items": 58,
+          "n_systems": 9,
+          "sae_rate": 0.0363984674329501,
+          "target_rate": 0.1206896551724138,
+          "difference": 0.0842911877394636,
+          "difference_pp": 8.42911877394636,
+          "ci_lower": 0.0325670498084291,
+          "ci_upper": 0.1398467432950191,
+          "ci_lower_pp": 3.256704980842912,
+          "ci_upper_pp": 13.984674329501914,
+          "cluster_permutation_p": 0.0023699763002369,
+          "cluster_permutation_p_holm": 0.0047399526004739
+        }
+      }
+    },
+    "cot_hinglish": {
+      "overflag": {
+        "condition": "cot",
+        "metric": "overflag",
+        "target_variety": "hinglish",
+        "n_items": 156,
+        "n_systems": 9,
+        "sae_rate": 0.022079772079772,
+        "target_rate": 0.0683760683760683,
+        "difference": 0.0462962962962962,
+        "difference_pp": 4.62962962962963,
+        "ci_lower": 0.0213675213675213,
+        "ci_upper": 0.0733618233618233,
+        "ci_lower_pp": 2.1367521367521367,
+        "ci_upper_pp": 7.336182336182335,
+        "cluster_permutation_p": 0.0002599974000259,
+        "cluster_permutation_p_holm": 0.0023399766002339
+      },
+      "relative_risk": {
+        "condition": "cot",
+        "target_variety": "hinglish",
+        "n_items": 156,
+        "n_systems": 9,
+        "n_item_system_pairs": 1404,
+        "sae_rate": 0.022079772079772,
+        "target_rate": 0.0683760683760683,
+        "rate_ratio": 3.0967741935483875,
+        "rate_ratio_ci_lower": 1.6755499685732242,
+        "rate_ratio_ci_upper": 9.202222222222227,
+        "target_only_flagged": 81,
+        "sae_only_flagged": 16,
+        "discordance_ratio": 5.0625,
+        "discordance_ratio_ci_lower": 2.1333333333333333,
+        "discordance_ratio_ci_upper": 22.685416666666697
+      },
+      "item_families": {
+        "standard_indianisms": {
+          "item_family": "standard_indianisms",
+          "n_stratum_items": 100,
+          "condition": "cot",
+          "metric": "overflag",
+          "target_variety": "hinglish",
+          "n_items": 98,
+          "n_systems": 9,
+          "sae_rate": 0.0136054421768707,
+          "target_rate": 0.046485260770975,
+          "difference": 0.0328798185941043,
+          "difference_pp": 3.28798185941043,
+          "ci_lower": 0.0090702947845804,
+          "ci_upper": 0.0634920634920634,
+          "ci_lower_pp": 0.90702947845805,
+          "ci_upper_pp": 6.349206349206349,
+          "cluster_permutation_p": 0.0109598904010959,
+          "cluster_permutation_p_holm": 0.0219197808021919
+        },
+        "genz_slang": {
+          "item_family": "genz_slang",
+          "n_stratum_items": 100,
+          "condition": "cot",
+          "metric": "overflag",
+          "target_variety": "hinglish",
+          "n_items": 58,
+          "n_systems": 9,
+          "sae_rate": 0.0363984674329501,
+          "target_rate": 0.1053639846743295,
+          "difference": 0.0689655172413793,
+          "difference_pp": 6.896551724137931,
+          "ci_lower": 0.0191570881226053,
+          "ci_upper": 0.1226053639846743,
+          "ci_lower_pp": 1.9157088122605364,
+          "ci_upper_pp": 12.260536398467432,
+          "cluster_permutation_p": 0.0140898591014089,
+          "cluster_permutation_p_holm": 0.0140898591014089
+        }
+      }
+    }
+  },
+  "system_overflag_consistency": [
+    {
+      "condition": "cot",
+      "target_variety": "indian_english",
+      "n_systems": 9,
+      "n_systems_higher": 9,
+      "n_systems_equal": 0,
+      "n_systems_lower": 0,
+      "min_difference_pp": 3.205128205128205,
+      "max_difference_pp": 10.897435897435898
+    },
+    {
+      "condition": "cot",
+      "target_variety": "hinglish",
+      "n_systems": 9,
+      "n_systems_higher": 9,
+      "n_systems_equal": 0,
+      "n_systems_lower": 0,
+      "min_difference_pp": 1.282051282051282,
+      "max_difference_pp": 10.256410256410255
+    },
+    {
+      "condition": "direct",
+      "target_variety": "indian_english",
+      "n_systems": 9,
+      "n_systems_higher": 9,
+      "n_systems_equal": 0,
+      "n_systems_lower": 0,
+      "min_difference_pp": 6.4102564102564115,
+      "max_difference_pp": 14.743589743589745
+    },
+    {
+      "condition": "direct",
+      "target_variety": "hinglish",
+      "n_systems": 9,
+      "n_systems_higher": 9,
+      "n_systems_equal": 0,
+      "n_systems_lower": 0,
+      "min_difference_pp": 3.8461538461538463,
+      "max_difference_pp": 16.025641025641026
+    }
+  ],
+  "calibration_target_minus_sae_ranges": {
+    "correct": {
+      "minimum": -0.11,
+      "maximum": -0.07
+    },
+    "confidence": {
+      "minimum": -0.017276,
+      "maximum": -0.001776
+    },
+    "nll": {
+      "minimum": 0.706428,
+      "maximum": 1.899927
+    },
+    "brier": {
+      "minimum": 0.106081,
+      "maximum": 0.206695
+    },
+    "ece": {
+      "minimum": 0.053581,
+      "maximum": 0.092724
+    },
+    "ace": {
+      "minimum": 0.058091,
+      "maximum": 0.092724
+    }
+  },
+  "ordinary_vs_coded_prompt_agreement": [
+    {
+      "probability_model_id": "gpt-4o-mini-2024-07-18",
+      "ordinary_model_id": "gpt-4o-mini-2024-07-18",
+      "variety": "all",
+      "n": 600,
+      "prediction_agreement": 0.8816666666666667,
+      "agreement_ci_lower": 0.85,
+      "agreement_ci_upper": 0.9116666666666666,
+      "cohen_kappa": 0.721317266554147,
+      "ordinary_accuracy": 0.7983333333333333,
+      "probability_prompt_accuracy": 0.755,
+      "accuracy_difference": -0.0433333333333333,
+      "accuracy_difference_ci_lower": -0.0733333333333333,
+      "accuracy_difference_ci_upper": -0.015
+    },
+    {
+      "probability_model_id": "gpt-4.1-mini-2025-04-14",
+      "ordinary_model_id": "gpt-4.1-mini-2025-04-14",
+      "variety": "all",
+      "n": 600,
+      "prediction_agreement": 0.89,
+      "agreement_ci_lower": 0.8566666666666666,
+      "agreement_ci_upper": 0.9216666666666664,
+      "cohen_kappa": 0.7610326287014295,
+      "ordinary_accuracy": 0.79,
+      "probability_prompt_accuracy": 0.75,
+      "accuracy_difference": -0.04,
+      "accuracy_difference_ci_lower": -0.0716666666666666,
+      "accuracy_difference_ci_upper": -0.01
+    }
+  ],
+  "conformal_ranges": {
+    "pooled_marginal": {
+      "sae": {
+        "minimum_mean_coverage": 0.92695,
+        "maximum_mean_coverage": 0.94305,
+        "minimum_mean_set_size": 1.35335,
+        "maximum_mean_set_size": 1.51995
+      },
+      "indian_english": {
+        "minimum_mean_coverage": 0.86965,
+        "maximum_mean_coverage": 0.88935,
+        "minimum_mean_set_size": 1.555,
+        "maximum_mean_set_size": 1.6418
+      },
+      "hinglish": {
+        "minimum_mean_coverage": 0.8845,
+        "maximum_mean_coverage": 0.88655,
+        "minimum_mean_set_size": 1.62145,
+        "maximum_mean_set_size": 1.989
+      }
+    },
+    "variety_conditional": {
+      "sae": {
+        "minimum_mean_coverage": 0.8966,
+        "maximum_mean_coverage": 0.9064,
+        "minimum_mean_set_size": 1.212,
+        "maximum_mean_set_size": 1.2773
+      },
+      "indian_english": {
+        "minimum_mean_coverage": 0.90065,
+        "maximum_mean_coverage": 0.90185,
+        "minimum_mean_set_size": 1.6478,
+        "maximum_mean_set_size": 2.2108
+      },
+      "hinglish": {
+        "minimum_mean_coverage": 0.9029,
+        "maximum_mean_coverage": 0.90395,
+        "minimum_mean_set_size": 1.75035,
+        "maximum_mean_set_size": 2.30345
+      }
+    }
+  },
+  "hierarchical_variety_effects": [
+    {
+      "term": "C(variety, Treatment(reference=\"sae\"))[T.hinglish]",
+      "posterior_mean_log_odds": -1.2055839088296332,
+      "posterior_sd": 0.0738700662401576,
+      "credible_lower": -1.350369238660342,
+      "credible_upper": -1.0607985789989245,
+      "odds_ratio": 0.2995170577885395
+    },
+    {
+      "term": "C(variety, Treatment(reference=\"sae\"))[T.indian_english]",
+      "posterior_mean_log_odds": -0.8782220092468324,
+      "posterior_sd": 0.0741506818282156,
+      "credible_lower": -1.023557345630135,
+      "credible_upper": -0.7328866728635297,
+      "odds_ratio": 0.4155210478683276
+    }
+  ],
+  "mixed_effects_diagnostics": {
+    "n_rows": 10800,
+    "n_items": 200,
+    "n_models": 7,
+    "n_systems": 9,
+    "hierarchical_formula": "correct_int ~ C(variety, Treatment(reference=\"sae\")) * C(condition, Treatment(reference=\"direct\"))",
+    "hierarchical_optimizer_success": true,
+    "hierarchical_optimizer_message": "Optimization terminated successfully.",
+    "hierarchical_iterations": 264,
+    "hierarchical_objective": 2965.3984489134446,
+    "gee_formula": "correct_int ~ C(variety, Treatment(reference=\"sae\")) * C(condition, Treatment(reference=\"direct\")) + C(system_id)",
+    "gee_converged": true
+  },
+  "selected_experiment_cost_usd": 0.422495,
+  "source_hashes": {
+    "results/study/metrics/paired/aggregate_paired_effects.csv": "26803fbfce34f153434ba8b718396739d23af86c347ac01ebf9ab7f3b1814dfe",
+    "results/study/metrics/paired/aggregate_reasoning_effects.csv": "659f46325b1d4f44f3a69e0f4852b9dc3a26c961004e98805338f133adf925a2",
+    "results/study/metrics/paired/model_paired_effects.csv": "1f86f8eb3f09cfd96bd29731fc7971cec28339856c44f188b553001e30267f3b",
+    "results/study/metrics/calibration/paired_calibration_differences.csv": "0031038e532aaa642211a7f71e6c0ff8babee2abe76371042a538dde762a3b6d",
+    "results/study/metrics/calibration/prompt_agreement.csv": "2999c598e033b09ca3ff0d56d3e70909879207ab65d22c4ed922f3db4875da45",
+    "results/study/metrics/conformal/conformal_summary.csv": "e027a09ffc777354c75274e83c09a09eed4b040e7c0679a2d17b3535aedbedbb",
+    "results/study/metrics/fairness/fairness_summary.csv": "a09037ad5be8398c68b30f8a2f7f5a13e260db633c70ab90f94d00ebaf7413b9",
+    "results/study/metrics/fairness/aggregate_fairness_effects.csv": "540fb0ef0d995a565638eb42a7f6f305de7a42312db9b64af115ccc6e0d824b9",
+    "results/study/metrics/fairness/aggregate_reasoning_fairness_effects.csv": "99666b6d5445c80417452f36fd6824d9fca1f61fc8c79e59e70232f2be7e35e9",
+    "results/study/metrics/fairness/aggregate_fairness_effects_equal_models.csv": "2b556d8ebae2ac525c591183d089af33c84f7396d7baf7975e5543414c3256fc",
+    "results/study/metrics/fairness/aggregate_reasoning_fairness_effects_equal_models.csv": "f3102bd8a56028ec3c7fa54e1d1ce5371bf32887d4b2185ed1a7c76c9efed9f5",
+    "results/study/metrics/fairness/aggregate_fairness_effects_by_cohort.csv": "020e6ac96f963a2a7fc19806fb7f07d4cb4a58c02cb5de07bcc1861577f8a037",
+    "results/study/metrics/fairness/aggregate_reasoning_fairness_effects_by_cohort.csv": "b60c8a0c772f164653667d26332d558b94574718fa4437738a6b4efaeb699080",
+    "results/study/metrics/fairness/overflag_relative_risk.csv": "89aa4eff9dbd699136c848db16321b81411046ca502878285443fea30ff4bbfa",
+    "results/study/metrics/fairness/system_overflag_consistency.csv": "310b4ee27d07261113ec8766183d2f1d7a9b64044f6d781b7ffc31e8b17bd097",
+    "results/study/metrics/fairness/aggregate_fairness_effects_by_item_family.csv": "5b1b4ff6809e442cd9357ada6b2ee3d12f134d431039adb5e68dc129945b6324",
+    "results/study/metrics/fairness/overflag_relative_risk_by_item_family.csv": "0ce427521e2e48bcb2091f23947efbd66b75b18c425cee1e684677ce64b2f307",
+    "results/study/metrics/mixed_effects/hierarchical_fixed_effects.csv": "78f6b0c0d9d8d8cc0911447355c0e38fb9ccd5e9afcdaea3b28dce0ae205b18a"
+  }
+}

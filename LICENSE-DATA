@@ -1,4 +1,4 @@
-The Beyond WEIRD benchmark dataset (the file `data/beyond_weird_benchmark.csv`
+The benchmark dataset (the file `data/language_variety_audit_benchmark.csv`
 and the accompanying Croissant metadata file `croissant.json`) is released
 under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 
@@ -17,11 +17,10 @@ Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
 
 Citation (BibTeX, anonymized for double-blind review):
 
-@misc{beyondweird2026,
-  title  = {Beyond {WEIRD} {English}: A Matched-Guise Benchmark for
-            Evaluating {LLM} Comprehension Across Standard American
-            English, Indian English, and Hinglish},
+@misc{languagevarietyaudit2026,
+  title  = {Matched Meaning, Unequal Moderation: Auditing Linguistic Bias in {LLMs}},
   author = {Anonymous Authors},
-  year   = {2026},
-  note   = {Version 1.0.0}
+  note   = {Anonymous submission under review},
+  year   = {2026}
+}
 }

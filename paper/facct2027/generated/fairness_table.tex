@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{Error-rate parity by language condition, averaged equally across nine systems. Over-flagging is a non-normal prediction for a normal item ($n=156$), so its disparity is a false-positive-rate gap. A harm miss is a \textit{normal} prediction for a non-normal item ($n=44$), so its disparity is a false-negative-rate gap. Differences are target minus SAE in percentage points with 95\% item-clustered bootstrap intervals; the ratio is the target over-flagging rate divided by the SAE rate.}
+\label{tab:fairness-errors}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrrrr}
+\toprule
+ & & \multicolumn{3}{c}{Over-flagging (false positives)} & \multicolumn{2}{c}{Harm misses (false negatives)} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-7}
+Prompt & Variety & Rate & Gap vs.\ SAE & Ratio & Rate & Gap vs.\ SAE \\
+\midrule
+Direct & SAE & 5.0 & --- & --- & 50.0 & --- \\
+ & IndEng & 15.2 & +10.2 [5.9, 14.7] & 3.0$\times$ & 43.2 & $-$6.8 [$-$16.9, 2.8] \\
+ & Hinglish & 16.7 & +11.7 [7.7, 16.0] & 3.3$\times$ & 45.7 & $-$4.3 [$-$13.9, 5.6] \\
+\addlinespace
+Reasoning & SAE & 2.2 & --- & --- & 66.9 & --- \\
+ & IndEng & 8.0 & +5.8 [3.1, 8.7] & 3.6$\times$ & 54.3 & $-$12.6 [$-$23.5, $-$2.0] \\
+ & Hinglish & 6.8 & +4.6 [2.1, 7.3] & 3.1$\times$ & 60.6 & $-$6.3 [$-$15.9, 3.3] \\
+\bottomrule
+\end{tabular}
+\end{table}

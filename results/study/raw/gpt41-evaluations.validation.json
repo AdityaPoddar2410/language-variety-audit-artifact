@@ -1,0 +1,19 @@
+{
+  "path": "results/study/raw/gpt41-evaluations.jsonl",
+  "sha256": "74a9f8cc0d555c73e65a6812306fb398f66f8ef4e2924bb11acc1624d28663b6",
+  "rows": 1200,
+  "unique_keys": 1200,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "run_ids": [
+    "gpt41-eval-v1"
+  ],
+  "benchmark_sha256": [
+    "49a924e33a1d3bcaa36a0be1f9c284678907a68c7a433b6f8f41606b6e0a7c6f"
+  ],
+  "prompt_versions": [
+    "v1-no-variety-cue"
+  ],
+  "total_input_tokens": 326694,
+  "total_output_tokens": 104928,
+  "total_latency_seconds": 1417.2374140899628
+}

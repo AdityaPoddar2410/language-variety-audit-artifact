@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from beyond_weird.conformal_stats import (
+from language_variety_audit.conformal_stats import (
     conformal_summary,
     repeated_conformal_evaluation,
 )
@@ -18,12 +18,12 @@ def main() -> None:
     parser.add_argument(
         "--probability-table",
         type=Path,
-        default=Path("results/metrics/calibration/probability_long.csv"),
+        default=Path("results/study/metrics/calibration/probability_long.csv"),
     )
     parser.add_argument(
         "--out-dir",
         type=Path,
-        default=Path("results/metrics/conformal"),
+        default=Path("results/study/metrics/conformal"),
     )
     parser.add_argument("--alpha", type=float, default=0.1)
     parser.add_argument("--calibration-fraction", type=float, default=0.5)

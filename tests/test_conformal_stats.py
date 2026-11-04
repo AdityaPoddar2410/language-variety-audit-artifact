@@ -4,12 +4,12 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from beyond_weird.conformal_stats import (
+from language_variety_audit.conformal_stats import (
     conformal_quantile,
     conformal_summary,
     repeated_conformal_evaluation,
 )
-from beyond_weird.prompts import CONTENT_CATEGORIES
+from language_variety_audit.prompts import CONTENT_CATEGORIES
 
 
 def test_conformal_quantile_uses_finite_sample_rank() -> None:

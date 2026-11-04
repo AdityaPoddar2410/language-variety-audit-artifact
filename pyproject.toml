@@ -3,23 +3,48 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "language-variety-audit"
+name = "language_variety_audit"
 version = "1.0.0"
-description = "Matched-item evaluation of language-variety effects in LLM classification."
+description = "Matched-guise benchmark for evaluating LLM comprehension across Standard American English, Indian English, and Hinglish."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
-authors = [{ name = "Anonymous authors" }]
+authors = [{ name = "Anonymous" }]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
 dependencies = [
-    "matplotlib>=3.9",
-    "numpy>=1.26",
+    "click>=8.1",
     "pandas>=2.0",
-    "scipy>=1.13",
-    "statsmodels>=0.14",
+    "numpy>=1.26",
+    "openpyxl>=3.1",
+    "python-dotenv>=1.0",
+    "tqdm>=4.65",
+    "openai>=1.50",
+    "anthropic>=0.40",
+    "ollama>=0.3",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest>=7", "ruff>=0.5"]
+gemini = ["google-genai>=1.0"]
+analysis = [
+    "matplotlib>=3.9",
+    "scipy>=1.13",
+    "seaborn>=0.13",
+    "statsmodels>=0.14",
+]
+
+[project.scripts]
+bw-evaluate      = "language_variety_audit.run_evaluations:main"
+bw-probabilities = "language_variety_audit.run_probabilities:main"
+bw-judge         = "language_variety_audit.run_judge:main"
+bw-metrics       = "language_variety_audit.compute_metrics:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

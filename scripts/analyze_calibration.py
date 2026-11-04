@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Build study calibration tables from probability JSONL files."""
+"""Build calibration tables from probability JSONL files."""
 from __future__ import annotations
 
 import argparse
 from pathlib import Path
 
-from beyond_weird.calibration_stats import (
+from language_variety_audit.calibration_stats import (
     calibration_summary,
     load_probability_results,
     paired_calibration_differences,
@@ -25,7 +25,7 @@ def main() -> None:
     parser.add_argument(
         "--out-dir",
         type=Path,
-        default=Path("results/metrics/calibration"),
+        default=Path("results/study/metrics/calibration"),
     )
     parser.add_argument("--bootstrap", type=int, default=10_000)
     parser.add_argument("--bins", type=int, default=10)

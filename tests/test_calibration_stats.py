@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from beyond_weird.calibration_stats import (
+from language_variety_audit.calibration_stats import (
     expected_calibration_error,
     paired_calibration_differences,
 )

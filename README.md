@@ -1,65 +1,49 @@
-# Language-Variety Classification Audit
+# Language-Variety Moderation Audit: Benchmark and Analysis Artifact
 
-This artifact contains the benchmark, model outputs, analysis code, and derived results for a matched-item study of classification behavior across Standard American English (SAE), Indian English, and Hinglish.
+Anonymous artifact for the submission *Matched Meaning, Unequal Moderation: Auditing Linguistic Bias in LLMs*.
 
-Each of the 200 benchmark items has three renditions that share one intended meaning and one moderation label. The paired structure permits within-item comparisons while holding the underlying intent fixed.
+> **Content warning.** The benchmark contains offensive, sexual, harassment, self-harm, and violence examples written to test moderation behavior. Provide content warnings to human readers and do not use the items as templates for bypassing moderation systems.
 
-## Contents
+## What is here
 
-- `data/`: benchmark CSV and Croissant metadata
-- `src/beyond_weird/`: statistical-analysis modules
-- `scripts/`: command-line analysis and reproduction scripts
-- `results/raw/`: fresh evaluation and constrained-probability outputs
-- `results/historical/`: preserved historical classification outputs used in the analysis
-- `results/validated/`: canonical long-form analysis tables
-- `results/metrics/`: paired, calibration, conformal, and mixed-effects results
-- `results/manifests/`: frozen summary of the reported numerical results
-- `results/model_manifests/`: local-model identities and quantization details
-- `figures/`: figures generated from the metric tables
-- `tests/`: unit tests for the statistical and evaluation utilities
+| Path | Contents |
+|---|---|
+| `data/language_variety_audit_benchmark.csv` | 200 hand-authored matched items, each with SAE, Indian English, and Hinglish renditions, one gold moderation label, and an item family (`standard_indianisms` or `genz_slang`) |
+| `data/croissant.json` | Croissant 1.0 metadata with responsible-AI fields |
+| `data/source-results/` | Preserved historical result tables used to reconstruct the four historical systems |
+| `results/study/raw/` | Request-level outputs for the five fresh systems and the two probability-producing snapshots |
+| `results/study/validated/accuracy_long.csv` | Canonical table of 10,800 classifications (200 items x 3 conditions x 2 prompts x 9 systems) |
+| `results/study/metrics/` | Paired accuracy, fairness (over-flagging, harm misses, category errors, rate ratios, matched discordance, item-family and per-system results), mixed-effects, calibration, and conformal outputs |
+| `results/study/manifests/` | Frozen headline results, SHA-256 hashes of the result files, and the LaTeX macros used in the paper |
+| `results/study/model_manifests/` | Local model digests and quantization records |
+| `results/study/audits/` | Combined audit of five fresh classification runs and two probability runs, current model inventory, and historical provenance |
+| `paper/facct2027/generated/`, `paper/facct2027/figures/` | Tables and figures generated from the outputs above |
+| `src/language_variety_audit/`, `scripts/`, `tests/` | Evaluation runners, statistics, analysis scripts, and tests |
 
-No credentials, environment files, model weights, participant identifiers, or author-identifying metadata are included.
+## Reproduce the analyses
 
-## Benchmark
-
-The dataset contains 200 matched triplets and six labels: `normal`, `offensive`, `sexually_suggestive`, `harassment`, `violence`, and `self_harm`. The class distribution is imbalanced: 156 items are normal and 44 are spread across the five sensitive categories. The benchmark is intended for controlled diagnostic evaluation, not model training or population-level prevalence estimation.
-
-The dataset was written specifically for this study rather than collected from social media or other user-generated sources. Thirty-two adult Indian English speakers who regularly use Hinglish reviewed the triplets for naturalness, semantic equivalence, and label agreement. Further provenance and limitation information is recorded in `data/croissant.json`.
-
-## Reproduce the analysis
-
-Python 3.10 or later is required. From the artifact root:
+Python 3.10 or later is required.
 
 ```bash
-python -m venv .venv
-. .venv/bin/activate
-pip install -r requirements.txt
-pip install -e .
-sh scripts/reproduce_analysis.sh
+python -m venv .venv && . .venv/bin/activate
+pip install -e '.[analysis,dev]'
+PYTHON="$PWD/.venv/bin/python" sh scripts/reproduce.sh
 pytest -q
 ```
 
-The complete statistical run uses 10,000 bootstrap draws and 100,000 randomization draws and can take several minutes. For a quick code check, run the tests only.
+`scripts/reproduce.sh` rebuilds the canonical accuracy table from the preserved outputs and regenerates every analysis, the manifest, the macros, the tables, and the figures. It makes no model calls. The pipeline also refreshes validation reports for all seven raw files, the combined input audit, and local-model manifest checksums. CSV outputs can be compared against `CHECKSUMS.sha256`; figure PDFs and `gee_summary.txt` contain timestamps and can differ after regeneration. The artifact contains generated tables and figures, not the manuscript source, so manuscript compilation is skipped.
 
-The reproduction script rebuilds the canonical accuracy table, paired estimates, reasoning-prompt contrasts, mixed-effects and GEE analyses, calibration metrics, repeated-split uncertainty-set diagnostics, figures, and LaTeX tables. It uses only the preserved outputs in this artifact and does not issue API requests.
+Run IDs and prompt-version labels are venue-neutral metadata. This normalization does not change request IDs, prompt hashes, model outputs, or predictions.
 
-## Raw-result provenance
+Re-running models requires provider API keys (see `.env.example`) or a local Ollama installation, and produces new outputs. Hosted model behavior can change over time, so new runs are not expected to match the frozen outputs exactly.
 
-Fresh JSONL records contain benchmark and prompt hashes, requested and resolved model identifiers, timestamps, usage counts, request identifiers when available, retries, latency, and parsing status. Historical CSVs predate that logging format and do not contain request-level prompt hashes. They are retained separately and identified as the historical cohort in the derived tables.
+## Measures
 
-The constrained-probability files represent a separate coded classifier that restricts the response to six single-token alternatives. They should not be interpreted as unconstrained semantic confidence from the ordinary output interface.
+- **Over-flagging:** any non-`normal` prediction for a `normal` item (156 items).
+- **Harm miss:** a `normal` prediction for a non-`normal` item (44 items).
+- **Harmful-category error:** any incorrect prediction for a non-`normal` item.
+- **Matched disparity:** target-condition rate minus SAE rate on the same items, averaged equally over systems, with item-clustered bootstrap intervals and sign-flip randomization tests (Holm-corrected within each output family).
 
-## Scope and limitations
+## Licenses
 
-- Inference is conditional on the evaluated systems and benchmark items.
-- Rare labels have insufficient sample sizes for precise category-specific conclusions.
-- The utterances are short and do not represent dialogue or long-form text.
-- Hinglish is Hindi-English code-mixing, not an English dialect.
-- The probability and uncertainty-set analyses cover two model snapshots.
-- The historical cohort has weaker request-level provenance than the fresh cohort.
-
-## Licensing and citation
-
-Code is released under the MIT License. The benchmark and Croissant metadata are released under CC BY 4.0. During anonymous review, cite the dataset as:
-
-> Anonymous authors (2026). *Beyond WEIRD English: A Matched-Guise Benchmark for Evaluating LLM Comprehension Across Standard American English, Indian English, and Hinglish*. Version 1.0.0.
+Code: MIT (`LICENSE`). Benchmark and metadata: CC BY 4.0 (`LICENSE-DATA`).

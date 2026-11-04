@@ -1,0 +1,19 @@
+{
+  "path": "results/study/raw/gemini25-evaluations.jsonl",
+  "sha256": "b11a697d1013ead7fdfb4416e15aad0567039f095227a2c94f528e2bfe31c768",
+  "rows": 1200,
+  "unique_keys": 1200,
+  "model": "gemini-2.5-flash-lite",
+  "run_ids": [
+    "gemini25-eval-v1"
+  ],
+  "benchmark_sha256": [
+    "49a924e33a1d3bcaa36a0be1f9c284678907a68c7a433b6f8f41606b6e0a7c6f"
+  ],
+  "prompt_versions": [
+    "v1-no-variety-cue"
+  ],
+  "total_input_tokens": 287698,
+  "total_output_tokens": 94981,
+  "total_latency_seconds": 2945.919925294773
+}

@@ -1,0 +1,19 @@
+{
+  "path": "results/study/raw/llama31-local-evaluations.jsonl",
+  "sha256": "ecc0ef09054293b40d8f8f54444045e054c1e8339a42927478f6a42088bff8e7",
+  "rows": 1200,
+  "unique_keys": 1200,
+  "model": "llama3.1:8b",
+  "run_ids": [
+    "llama31-local-v1"
+  ],
+  "benchmark_sha256": [
+    "49a924e33a1d3bcaa36a0be1f9c284678907a68c7a433b6f8f41606b6e0a7c6f"
+  ],
+  "prompt_versions": [
+    "v1-no-variety-cue"
+  ],
+  "total_input_tokens": 266052,
+  "total_output_tokens": 110379,
+  "total_latency_seconds": 6587.783543967293
+}

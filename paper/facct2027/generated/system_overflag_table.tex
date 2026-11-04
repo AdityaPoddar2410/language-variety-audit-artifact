@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\caption{Over-flagging rates (\%) on the 156 normal items for each system. Every system over-flags Indian English and Hinglish renditions more often than matched SAE renditions under both prompts.}
+\label{tab:system-overflag}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrrrrr}
+\toprule
+ & & \multicolumn{3}{c}{Direct} & \multicolumn{3}{c}{Reasoning} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+System & Cohort & SAE & IndEng & Hinglish & SAE & IndEng & Hinglish \\
+\midrule
+GPT-4.1 Mini & Fresh & 7.1 & 16.0 & 18.6 & 0.6 & 7.7 & 3.8 \\
+Gemini 2.5 Flash-Lite & Fresh & 5.1 & 14.1 & 9.0 & 4.5 & 9.6 & 7.7 \\
+Gemma 3 12B & Fresh & 7.1 & 21.8 & 23.1 & 2.6 & 13.5 & 9.6 \\
+Llama 3.1 8B & Fresh & 5.1 & 11.5 & 20.5 & 1.3 & 4.5 & 2.6 \\
+Mistral 7B Instruct & Fresh & 3.8 & 11.5 & 17.3 & 1.3 & 7.7 & 11.5 \\
+\addlinespace
+Claude Haiku 3.5 & Historical & 3.8 & 14.7 & 18.6 & 3.8 & 9.6 & 8.3 \\
+GPT-4o-mini & Historical & 4.5 & 15.4 & 15.4 & 1.3 & 5.8 & 7.7 \\
+Gemma 3 12B & Historical & 5.1 & 17.3 & 14.1 & 2.6 & 7.7 & 5.8 \\
+Llama 3.1 8B & Historical & 3.2 & 14.1 & 13.5 & 1.9 & 5.8 & 4.5 \\
+\bottomrule
+\end{tabular}
+\end{table}

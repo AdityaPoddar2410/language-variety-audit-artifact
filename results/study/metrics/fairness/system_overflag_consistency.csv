@@ -1,0 +1,5 @@
+condition,target_variety,n_systems,n_systems_higher,n_systems_equal,n_systems_lower,min_difference_pp,max_difference_pp
+cot,indian_english,9,9,0,0,3.205128205128205,10.897435897435898
+cot,hinglish,9,9,0,0,1.282051282051282,10.256410256410257
+direct,indian_english,9,9,0,0,6.4102564102564115,14.743589743589745
+direct,hinglish,9,9,0,0,3.8461538461538463,16.025641025641026

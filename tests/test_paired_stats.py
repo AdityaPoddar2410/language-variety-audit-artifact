@@ -3,7 +3,7 @@ from __future__ import annotations
 import pandas as pd
 import pytest
 
-from beyond_weird.paired_stats import (
+from language_variety_audit.paired_stats import (
     aggregate_paired_effects,
     aggregate_reasoning_effects,
     holm_adjust,
@@ -24,7 +24,7 @@ def _synthetic_frame() -> pd.DataFrame:
                 rows.append(
                     {
                         "id": item_id,
-                        "cohort": "fresh",
+                        "cohort": "new",
                         "provider": "provider",
                         "model": model,
                         "model_id": model,
@@ -82,7 +82,7 @@ def test_aggregate_reasoning_effect_is_cot_minus_direct() -> None:
                 rows.append(
                     {
                         "id": item_id,
-                        "cohort": "fresh",
+                        "cohort": "new",
                         "provider": "provider",
                         "model": model,
                         "model_id": model,

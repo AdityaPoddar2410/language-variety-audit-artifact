@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compute paired study accuracy estimates and inference tables."""
+"""Compute paired accuracy estimates and inference tables."""
 from __future__ import annotations
 
 import argparse
@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from beyond_weird.paired_stats import (
+from language_variety_audit.paired_stats import (
     accuracy_summary,
     aggregate_paired_effects,
     aggregate_paired_effects_by_cohort,
@@ -25,12 +25,12 @@ def main() -> None:
     parser.add_argument(
         "--accuracy",
         type=Path,
-        default=Path("results/validated/accuracy_long.csv"),
+        default=Path("results/study/validated/accuracy_long.csv"),
     )
     parser.add_argument(
         "--out-dir",
         type=Path,
-        default=Path("results/metrics/paired"),
+        default=Path("results/study/metrics/paired"),
     )
     parser.add_argument("--bootstrap", type=int, default=10_000)
     parser.add_argument("--permutations", type=int, default=100_000)

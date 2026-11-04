@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from beyond_weird.prompt_agreement import prompt_agreement_table
+from language_variety_audit.prompt_agreement import prompt_agreement_table
 
 
 def main() -> None:
@@ -15,17 +15,17 @@ def main() -> None:
     parser.add_argument(
         "--accuracy",
         type=Path,
-        default=Path("results/validated/accuracy_long.csv"),
+        default=Path("results/study/validated/accuracy_long.csv"),
     )
     parser.add_argument(
         "--probability-table",
         type=Path,
-        default=Path("results/metrics/calibration/probability_long.csv"),
+        default=Path("results/study/metrics/calibration/probability_long.csv"),
     )
     parser.add_argument(
         "--out",
         type=Path,
-        default=Path("results/metrics/calibration/prompt_agreement.csv"),
+        default=Path("results/study/metrics/calibration/prompt_agreement.csv"),
     )
     parser.add_argument("--bootstrap", type=int, default=10_000)
     parser.add_argument("--seed", type=int, default=2027)
